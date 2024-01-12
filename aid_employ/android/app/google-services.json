@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "674741129487",
+    "project_id": "soln-no-poverty",
+    "storage_bucket": "soln-no-poverty.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674741129487:android:422141e9320e14d4336e7a",
+        "android_client_info": {
+          "package_name": "com.example.aid_employ"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBlTJYrAlcoxcwCw8YvkpPRLsXma2wRW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
