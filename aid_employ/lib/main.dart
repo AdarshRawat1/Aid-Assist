@@ -33,7 +33,6 @@ class MyApp extends ConsumerStatefulWidget {
 class _MyAppState extends ConsumerState<MyApp> {
   UserModel? userModel;
 
-
   void getData(WidgetRef ref, User data) async {
     userModel = await ref
         .watch(authControllerProvider.notifier)
@@ -62,6 +61,17 @@ class _MyAppState extends ConsumerState<MyApp> {
               },
             ),
             routeInformationParser: const RoutemasterParser(),
+            builder: (context, child) {
+              return Scaffold(
+                body: child,
+                floatingActionButton: FloatingActionButton(
+                  onPressed: () {
+                    Routemaster.of(context).push('/chat-bot');
+                  },
+                  child: const Icon(Icons.message),
+                ),
+              );
+            },
           ),
           error: (error, stackTrace) => ErrorText(error: error.toString()),
           loading: () => const Loader(),
