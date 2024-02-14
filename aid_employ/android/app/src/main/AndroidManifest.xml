@@ -1,6 +1,7 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <application
-        android:label="aid_employ"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aid_employ">
+   <application
+        android:label="Aid Employ"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
