@@ -49,6 +49,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '674741129487',
     projectId: 'soln-no-poverty',
     authDomain: 'soln-no-poverty.firebaseapp.com',
+    databaseURL: 'https://soln-no-poverty-default-rtdb.firebaseio.com',
     storageBucket: 'soln-no-poverty.appspot.com',
     measurementId: 'G-D0WME24WNC',
   );
@@ -58,6 +59,7 @@ class DefaultFirebaseOptions {
     appId: '1:674741129487:android:422141e9320e14d4336e7a',
     messagingSenderId: '674741129487',
     projectId: 'soln-no-poverty',
+    databaseURL: 'https://soln-no-poverty-default-rtdb.firebaseio.com',
     storageBucket: 'soln-no-poverty.appspot.com',
   );
 
@@ -66,7 +68,10 @@ class DefaultFirebaseOptions {
     appId: '1:674741129487:ios:2ba3d61dd3200aef336e7a',
     messagingSenderId: '674741129487',
     projectId: 'soln-no-poverty',
+    databaseURL: 'https://soln-no-poverty-default-rtdb.firebaseio.com',
     storageBucket: 'soln-no-poverty.appspot.com',
+    androidClientId: '674741129487-6eme2787fsqrhjclqs7d8nr1legn605e.apps.googleusercontent.com',
+    iosClientId: '674741129487-8o5bifin0e820i4lfgeof6u49s4r38te.apps.googleusercontent.com',
     iosBundleId: 'com.example.redditTutorial',
   );
 
@@ -75,7 +80,10 @@ class DefaultFirebaseOptions {
     appId: '1:674741129487:ios:2ba3d61dd3200aef336e7a',
     messagingSenderId: '674741129487',
     projectId: 'soln-no-poverty',
+    databaseURL: 'https://soln-no-poverty-default-rtdb.firebaseio.com',
     storageBucket: 'soln-no-poverty.appspot.com',
+    androidClientId: '674741129487-6eme2787fsqrhjclqs7d8nr1legn605e.apps.googleusercontent.com',
+    iosClientId: '674741129487-8o5bifin0e820i4lfgeof6u49s4r38te.apps.googleusercontent.com',
     iosBundleId: 'com.example.redditTutorial',
   );
 }

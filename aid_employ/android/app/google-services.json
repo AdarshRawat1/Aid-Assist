@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "674741129487",
+    "firebase_url": "https://soln-no-poverty-default-rtdb.firebaseio.com",
     "project_id": "soln-no-poverty",
     "storage_bucket": "soln-no-poverty.appspot.com"
   },
@@ -12,7 +13,20 @@
           "package_name": "com.example.aid_employ"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "674741129487-6eme2787fsqrhjclqs7d8nr1legn605e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aid_employ",
+            "certificate_hash": "44c08d8c3d262ccba519a90bf3555cf4713be50c"
+          }
+        },
+        {
+          "client_id": "674741129487-hg2k0d7lsjtkfhp5jpbubk7v6rg9he56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBBlTJYrAlcoxcwCw8YvkpPRLsXma2wRW4"
@@ -20,7 +34,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674741129487-hg2k0d7lsjtkfhp5jpbubk7v6rg9he56.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "674741129487-8o5bifin0e820i4lfgeof6u49s4r38te.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.redditTutorial"
+              }
+            }
+          ]
         }
       }
     }

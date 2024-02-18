@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:aid_employ/features/feed/feed_screen.dart';
-import 'package:aid_employ/features/home/screens/home_screen.dart';
 import 'package:aid_employ/features/post/screens/add_post_screen.dart';
 
 class Constants {
