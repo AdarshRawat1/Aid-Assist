@@ -72,7 +72,6 @@ To scale further, we are planning to keep the user interface minimal, implement 
 
 2. Install dependencies:
    ```bash
-   cd Aid-Employ
    cd app
    flutter pub get
    ```
