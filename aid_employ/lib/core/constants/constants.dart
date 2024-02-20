@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:aid_employ/features/feed/feed_screen.dart';
-import 'package:aid_employ/features/home/screens/home_screen.dart';
 import 'package:aid_employ/features/post/screens/add_post_screen.dart';
 import 'package:aid_employ/features/donate/donate_map.dart';
 const String googleMapsApiKey="___Secret ___";
@@ -8,6 +7,8 @@ class Constants {
   static const logoPath = 'assets/images/logo.png';
   static const loginEmotePath = 'assets/images/loginEmote.png';
   static const googlePath = 'assets/images/google.png';
+  static const iconsPath = 'assets/icons';
+
 
   static const bannerDefault =
       'https://thumbs.dreamstime.com/b/abstract-stained-pattern-rectangle-background-blue-sky-over-fiery-red-orange-color-modern-painting-art-watercolor-effe-texture-123047399.jpg';
