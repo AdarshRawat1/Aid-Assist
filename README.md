@@ -2,7 +2,7 @@
 <h3 align="center"> Assisting the aid to ensure every step forward is a leap towards brighter futures. </h3>
 <p align="center">
   <a href="https://github.com/AKACHI-4/Aid-Employ/releases">
-    <img wwidth="120" height="120" alt="Aid Employ" src="https://github.com/AdarshRawat1/Solution-challenge-Flutter/assets/100958893/064dd7be-022b-4920-9ab2-412f283a1b1e">
+    <img wwidth="120" height="120" alt="Aid Assist" src="https://github.com/AdarshRawat1/Solution-challenge-Flutter/assets/100958893/064dd7be-022b-4920-9ab2-412f283a1b1e">
   </a>
 </p>
 
@@ -16,7 +16,7 @@
     ·
    <a href="./Aid-Employ-MVP.apk">View APK</a>
     ·
-    <a href="https://github.com/AKACHI-4/Aid-Employ/issues">Report Bug / Request Feature</a>
+    <a href="https://github.com/AdarshRawat1/Solution-challenge-Aid-Assist/issues">Report Bug / Request Feature</a>
   </p>
 
 <br>
