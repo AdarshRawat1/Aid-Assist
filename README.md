@@ -43,8 +43,8 @@ The project aligns with four SDGs: No Poverty, Zero Hunger, Quality Education, a
 Solution's architecture mirrors a basic social media platform, with normal users and communities posting social drives. Backend processes and the Gemini-Pro model assist in guiding users, maintaining rules, and providing AI-driven insights.
 
 ### Technology Stack
-- Frontend: Flutter
-- Backend: Firebase (Authentication, Real-time Database, Firestore)
+- Frontend: Flutter, Routemaster, Riverpod 2.0, 
+- Backend: Firebase (Auth, Storage , Firestore)
 - AI Model: Gemini-Pro Chat & Vision
 - Model Tuning: Google Cloud Platform
 
@@ -60,11 +60,16 @@ The team envisions direct government involvement, allowing efficient management 
 To scale further, we are planning to keep the user interface minimal, implement post filtering options, and ensure accessibility across browsers and iOS devices.
 
 ## Getting Started
-
 1. Clone the repository:
    ```bash
-   git clone https://github.com/AKACHI-4/Aid-Employ.git
+   git clone https://github.com/AdarshRawat1/Solution-challenge-Aid-Assist.git
    ```
+- Create Firebase Project
+- Enable Authentication (Google Sign In, Guest Sign In)
+- Make Firestore Rules
+- Create Android, iOS & Web Apps
+- Use FlutterFire CLI to add the Firebase Project to this app.
+
 2. Install dependencies:
    ```bash
    cd Aid-Employ
@@ -75,6 +80,15 @@ To scale further, we are planning to keep the user interface minimal, implement 
    ```bash
    flutter run
    ```
+4. <optional> for iOS Simulator:
+   ```bash
+   open -a simulator 
+   ```
+
+5. to see the Web Output 
+  ```bash
+   flutter run -d chrome --web-renderer html 
+  ```
 ### License
 This project is licensed under the [MIT License](./LICENSE).
 
