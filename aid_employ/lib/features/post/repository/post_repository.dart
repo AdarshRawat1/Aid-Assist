@@ -34,11 +34,10 @@ class PostRepository {
   }
 
   Stream<List<Post>> fetchUserPosts(List<Community> communities) {
-    return _posts
-        .where('communityName', whereIn: communities.map((e) => e.name).toList())
-        .orderBy('createdAt', descending: true)
-        .snapshots()
-        .map(
+        // .where('communityName', whereIn: communities.map((e) => e.name).toList())
+        // .orderBy('createdAt', descending: true)
+        // .snapshots()
+        return _posts.orderBy('createdAt', descending: true).limit(10).snapshots().map(
           (event) => event.docs
               .map(
                 (e) => Post.fromMap(
