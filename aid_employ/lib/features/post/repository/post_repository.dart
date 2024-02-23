@@ -34,10 +34,8 @@ class PostRepository {
   }
 
   Stream<List<Post>> fetchUserPosts(List<Community> communities) {
-        // .where('communityName', whereIn: communities.map((e) => e.name).toList())
-        // .orderBy('createdAt', descending: true)
-        // .snapshots()
-        return _posts.orderBy('createdAt', descending: true).limit(10).snapshots().map(
+        // if(communities.map((e) => e.name).toList().isEmpty){
+        return _posts.orderBy('createdAt', descending: true).limit(7).snapshots().map(
           (event) => event.docs
               .map(
                 (e) => Post.fromMap(
@@ -46,7 +44,23 @@ class PostRepository {
               )
               .toList(),
         );
-  }
+      // }
+      // else{
+      //   return _posts
+      //   .where('communityName', whereIn: communities.map((e) => e.name).toList())
+      //   .orderBy('createdAt', descending: true)
+      //   .snapshots()
+      //   .map(
+      //     (event) => event.docs
+      //         .map(
+      //           (e) => Post.fromMap(
+      //             e.data() as Map<String, dynamic>,
+      //           ),
+      //         )
+      //         .toList(),
+      //   );
+      // }
+    }
 
   Stream<List<Post>> fetchGuestPosts() {
     return _posts.orderBy('createdAt', descending: true).limit(10).snapshots().map(
