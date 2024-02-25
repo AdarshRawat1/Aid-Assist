@@ -25,7 +25,7 @@ import os
 import firebase_admin
 from firebase_admin import credentials, firestore
 
-my_bot_token = '6751113963:AAENWjtiK0ywvDida_yC6q0oHi8adDbyfbw'
+my_bot_token = os.environ['YOUR_BOT_TOKEN']
 
 # Enable logging
 logging.basicConfig(
@@ -68,7 +68,9 @@ async def help_command(update: Update,
 
 async def location_handler(update: Update,
                            context: ContextTypes.DEFAULT_TYPE) -> None:
+  
   user_message = update.message.text.capitalize()
+
 
   collection_ref = db.collection("posts")
 
@@ -84,10 +86,10 @@ async def location_handler(update: Update,
   for document in documents:
     title = document.get("title").capitalize()
     community = document.get("communityName").capitalize()
+
     description = document.get("description")
     if description :
       description = description.capitalize()
-    
     username = document.get("username").capitalize()
 
     reply_text += (f"<b>📌 Title:</b> {title}\n"
