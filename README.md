@@ -24,72 +24,91 @@
 ![906a0524-3253-407d-8e72-512bb39a9b9d](https://github.com/AKACHI-4/Aid-Employ/assets/99159580/531b33d4-b0fd-4f86-bd88-d7885288e5b4)
 
 ## Overview
-Aid Employ is a cross-platform solution designed to address the challenges faced by local welfare initiatives in getting attention and support on mainstream social media. The platform allows users and organizations to post and discover social drives, connecting volunteers and sponsors for collaborative efforts.The project incorporates a chatbot using Gemini Pro, fine-tuned for seamless navigation. Features include description and title improvement, image generation, and more to enhance the visibility and effectiveness of social drive posts _(in working)_.
+
+- Streamlining support for local welfare initiatives on social media.
+- Connect volunteers and sponsors easily.
+- Features include:
+  - Mobile Application
+  - Telegram chatbot
+  - Gemini Pro Chat Model for efficient tagging
+- Enhance post visibility with image generation. _(Currently in development)_
 
 ## Project Details
 
 ### Problem Statement
-In the vast landscape of social media, local initiatives often get lost, hindering the impact of social welfare drives. Aid-Employ aims to provide a dedicated space for these initiatives, leveraging generative AI to guide users to platform with providing relevant drives in their area.
+
+In the crowded social media space, local initiatives often struggle for visibility, limiting the impact of social welfare efforts.
+
+### Solution
+
+Aid-Employ provides a dedicated platform using AI to connect users with relevant drives in their area.
 
 ### Impact
-The platform centralizes information, connecting helping minds within specific areas. Initial goals include empowering users to post and discover drives. Quantifiable data is collected through Firebase Firestore, filtering location-specific posts. Tools such as Makersuite Gemini, Google Colab, Android, and Flutter drive the project's impact.
+
+The platform centralizes information, connecting helping minds within specific areas. Initial goals include empowering users to post and discover drives seamlessely.
 
 ![8b824041-82c0-4d61-9aee-5cdc44270a4d](https://github.com/AKACHI-4/Aid-Employ/assets/99159580/4c4ee604-0c73-42db-b0ef-5ceaffdc592b)
 
 ### UN Sustainable Development Goals
-The project aligns with four SDGs: No Poverty, Zero Hunger, Quality Education, and Decent Work and Economic Growth. It addresses the separation between economic classes, facilitating efficient social welfare drives.
+
+The project aligns with four SDGs: No Poverty, Zero Hunger, Quality Education, and Decent Work and Economic Growth.
 
 ### Architecture
-Solution's architecture mirrors a basic social media platform, with normal users and communities posting social drives. Backend processes and the Gemini-Pro model assist in guiding users, maintaining rules, and providing AI-driven insights.
+
+Architecture mirrors social media platform, with users and communities posting social drives. Backend processes and Gemini-Pro chat model assist in getting users drives data efficiently.
 
 ### Technology Stack
-- Frontend: Flutter, Routemaster, Riverpod 2.0, 
+
+- Frontend: Flutter, Routemaster, Riverpod 2.0,
 - Backend: Firebase (Auth, Storage , Firestore)
-- AI Model: Gemini-Pro Chat & Vision
-- Model Tuning: Google Cloud Platform
+- AI Model: Gemini-Pro Chat
+- Chatbot: Telegram, Google Compute Engine
 
 ![d61a7a49-89d7-4395-abb2-25e204d0c8db](https://github.com/AKACHI-4/Aid-Employ/assets/99159580/9b1c4640-b104-4ba1-8e9a-6b7564ceba70)
 
 ### Challenges
-The primary challenge is with Gemini-Pro's unavailability for fine-tuning, making it difficult to train the model effectively. The team considers alternative models or awaits fine-tuning support.
+
+The primary challenge is with Gemini-Pro's unavailability for fine-tuning. The team considers move ahead with a simpler telegram chatbot and used gemini chat for the filtering and tagging.
 
 ### Future Steps
-The team envisions direct government involvement, allowing efficient management of government-owned social welfare programs. Integration of AI models for program verification is a potential future enhancement.
+
+The team envisions direct government involvement, allowing efficient management of government-owned and local social welfare programs. Integration of AI models for program verification is a potential future enhancement.
 
 ### Scaling
-To scale further, we are planning to keep the user interface minimal, implement post filtering options, and ensure accessibility across browsers and iOS devices.
+
+To scale further, we are planning to keep the user interface minimal, implement automation for faster build and release, and ensure accessibility across devices (cross-origin support).
 
 ## Getting Started
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/AdarshRawat1/Solution-challenge-Aid-Assist.git
-   ```
-- Create Firebase Project
-- Enable Authentication (Google Sign In, Guest Sign In)
-- Make Firestore Rules
-- Create Android, iOS & Web Apps
-- Use FlutterFire CLI to add the Firebase Project to this app.
 
-2. Install dependencies:
-   ```bash
-   cd aid-assist-app
-   flutter pub get
-   ```
-3. Run the app:
-   ```bash
-   flutter run
-   ```
-4. <optional> for iOS Simulator:
-   ```bash
-   open -a simulator 
-   ```
+### Flutter
 
-5. to see the Web Output 
+- Clone the repository:
   ```bash
-   flutter run -d chrome --web-renderer html 
+  git clone https://github.com/AdarshRawat1/Solution-challenge-Aid-Assist.git
+  cd aid-assist-app
   ```
-### License
+- Install dependencies:
+  ```bash
+  flutter pub get
+  ```
+- Run the app:
+  ```bash
+  flutter run
+  ```
+- for iOS Simulator (optional):
+  ```bash
+  open -a simulator
+  ```
+- to see the Web Output
+  ```bash
+  flutter run -d chrome --web-renderer html
+  ```
+[Ada Telegram Chatbot](https://t.me/Ada_R01_bot)
+
+## License
+
 This project is licensed under the [MIT License](./LICENSE).
 
-### Acknowledgments
+## Acknowledgments
+
 We appreciate the support from the open-source community and look forward to making a positive impact together.
