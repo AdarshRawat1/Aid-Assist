@@ -52,6 +52,12 @@ The platform centralizes information, connecting helping minds within specific a
 ### UN Sustainable Development Goals
 
 The project aligns with four SDGs: No Poverty, Zero Hunger, Quality Education, and Decent Work and Economic Growth.
+<!-- GOALS -->
+## Our Goals
+No Poverty               | Zero Hunger             |   Quality Education                  |  Decent Work and Economic Growth
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-01_480.png?raw=true)|![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-02_480.png?raw=true)|![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-04_480.png?raw=tru)|![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-08_480.png?raw=true)|
+
 
 ### Architecture
 
