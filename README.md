@@ -126,6 +126,18 @@ To run any Android application built with Flutter you need to configure the envi
   flutter run -d chrome --web-renderer html
   ```
 
+<!-- FIREBASE -->
+## Firebase
+
+List of Communities             | List of Users 
+:-------------------------:|:-------------------------:|
+![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Firebase_1.png?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Firebase_3.png?raw=true)|
+
+Posts on Platform [Tagged using Gemini]             | Usage Analytics
+:-------------------------:|:-------------------------:|
+![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Firebase_2.png?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Firebase_4.png?raw=true)|
+
+
 
 <!-- YOUTUBE -->
 ## 📌 JOURNEY
