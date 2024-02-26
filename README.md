@@ -26,7 +26,7 @@
 
 [Ada Telegram Chatbot](https://t.me/Ada_R01_bot)
 
-![image](https://github.com/AdarshRawat1/Aid-Assist/assets/100958893/13fbb2d4-2e2a-430b-a9e0-a0572fd28405)
+![image](https://github.com/AdarshRawat1/Aid-Assist/assets/100958893/dad9ad43-45d3-4712-a29d-41010e12a74e)
 
 ## Overview
 
