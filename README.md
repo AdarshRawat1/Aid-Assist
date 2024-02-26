@@ -18,12 +18,15 @@
     ·
     <a href="https://github.com/AdarshRawat1/Solution-challenge-Aid-Assist/issues">Report Bug / Request Feature</a> 
   </p>
-   
-<p align="center"> [Ada Telegram Chatbot](https://t.me/Ada_R01_bot) </p>
 
 <br>
 
 ![906a0524-3253-407d-8e72-512bb39a9b9d](https://github.com/AKACHI-4/Aid-Employ/assets/99159580/531b33d4-b0fd-4f86-bd88-d7885288e5b4)
+
+
+[Ada Telegram Chatbot](https://t.me/Ada_R01_bot)
+
+![image](https://github.com/AdarshRawat1/Aid-Assist/assets/100958893/13fbb2d4-2e2a-430b-a9e0-a0572fd28405)
 
 ## Overview
 
@@ -93,8 +96,8 @@ To scale further, we are planning to keep the user interface minimal, implement 
 To run any Android application built with Flutter you need to configure the enviroments in your machine, you can do this following the the tutorial provided by Google in [Flutter website](https://flutter.dev/docs/get-started/install)
 
 - Flutter SDK
-- Android Studio (to download Android SDK)
-- Xcode (for iOS develop only)
+- Android Studio (to download Android SDK) [Installation Guide](https://developer.android.com/studio/install) 
+- Xcode (for iOS development only) 
 - Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
 
 ### Flutter
