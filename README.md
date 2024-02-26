@@ -39,6 +39,14 @@
 - Enhance post visibility with image generation. _(Currently in development)_
 
 ## Project Details
+### UN Sustainable Development Goals
+
+The project aligns with four SDGs: No Poverty, Zero Hunger, Quality Education, and Decent Work and Economic Growth.
+<!-- GOALS -->
+## Our Goals
+No Poverty               | Zero Hunger             |   Quality Education                  |  Decent Work and Economic Growth
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-01_480.png?raw=true)|![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-02_480.png?raw=true)|![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-04_480.png?raw=tru)|![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-08_480.png?raw=true)|
 
 ### Problem Statement
 
@@ -54,16 +62,6 @@ The platform centralizes information, connecting helping minds within specific a
 
 ![8b824041-82c0-4d61-9aee-5cdc44270a4d](https://github.com/AKACHI-4/Aid-Employ/assets/99159580/4c4ee604-0c73-42db-b0ef-5ceaffdc592b)
 
-### UN Sustainable Development Goals
-
-The project aligns with four SDGs: No Poverty, Zero Hunger, Quality Education, and Decent Work and Economic Growth.
-<!-- GOALS -->
-## Our Goals
-No Poverty               | Zero Hunger             |   Quality Education                  |  Decent Work and Economic Growth
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-01_480.png?raw=true)|![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-02_480.png?raw=true)|![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-04_480.png?raw=tru)|![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-08_480.png?raw=true)|
-
-
 ### Architecture
 
 Architecture mirrors social media platform, with users and communities posting social drives. Backend processes and Gemini-Pro chat model assist in getting users drives data efficiently.
@@ -78,12 +76,16 @@ Architecture mirrors social media platform, with users and communities posting s
 ![d61a7a49-89d7-4395-abb2-25e204d0c8db](https://github.com/AKACHI-4/Aid-Employ/assets/99159580/9b1c4640-b104-4ba1-8e9a-6b7564ceba70)
 
 ### Challenges
-
-The primary challenge is with Gemini-Pro's unavailability for fine-tuning. The team considers move ahead with a simpler telegram chatbot and used gemini chat for the filtering and tagging.
+The primary challenge was with Gemini-Pro's unavailability for fine-tuning. The team considers move ahead with a python script based telegram chatbot.
+Multimodal Tasks with the Gemini API [firestore-multimodal-genai@0.0.8] Extension for the filtering and tagging of posts .
 
 ### Future Steps
+**Under Development**
+-  Integrating Google Maps to platform so that users can perform food/Cloth/toy deliver volunteering while going on evening walk. (resources available for charity can be posted in platform with pickup location).
 
-The team envisions direct government involvement, allowing efficient management of government-owned and local social welfare programs. Integration of AI models for program verification is a potential future enhancement.
+**Potential Scaling**
+The team envisions direct government involvement, allowing efficient management of government-owned and local social welfare programs. 
+Integration of AI models for program verification is a potential future enhancement.
 
 ### Scaling
 
