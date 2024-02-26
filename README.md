@@ -127,6 +127,11 @@ To run any Android application built with Flutter you need to configure the envi
   ```
 
 
+<!-- YOUTUBE -->
+## 📌 JOURNEY
+- Final Submission Video [YouTube](https://youtu.be/YZhykdsAA7E)
+- Regional Bootcamp Submission [YouTube](https://youtu.be/e0kt3fsICAI)
+
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).
