@@ -73,8 +73,6 @@ Architecture mirrors social media platform, with users and communities posting s
 - AI Model: Gemini-Pro Chat
 - Chatbot: Telegram, Google Compute Engine
 
-![d61a7a49-89d7-4395-abb2-25e204d0c8db](https://github.com/AKACHI-4/Aid-Employ/assets/99159580/9b1c4640-b104-4ba1-8e9a-6b7564ceba70)
-
 ### Challenges
 The primary challenge was with Gemini-Pro's unavailability for fine-tuning. The team considers move ahead with a python script based telegram chatbot.
 Multimodal Tasks with the Gemini API [firestore-multimodal-genai@0.0.8] Extension for the filtering and tagging of posts .
