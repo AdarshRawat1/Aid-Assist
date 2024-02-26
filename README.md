@@ -16,12 +16,17 @@
     ·
    <a href="./Aid-Employ-MVP.apk">View APK</a>
     ·
-    <a href="https://github.com/AdarshRawat1/Solution-challenge-Aid-Assist/issues">Report Bug / Request Feature</a>
+    <a href="https://github.com/AdarshRawat1/Solution-challenge-Aid-Assist/issues">Report Bug / Request Feature</a> 
   </p>
 
 <br>
 
 ![906a0524-3253-407d-8e72-512bb39a9b9d](https://github.com/AKACHI-4/Aid-Employ/assets/99159580/531b33d4-b0fd-4f86-bd88-d7885288e5b4)
+
+
+[Ada Telegram Chatbot](https://t.me/Ada_R01_bot)
+
+![image](https://github.com/AdarshRawat1/Aid-Assist/assets/100958893/dad9ad43-45d3-4712-a29d-41010e12a74e)
 
 ## Overview
 
@@ -34,6 +39,14 @@
 - Enhance post visibility with image generation. _(Currently in development)_
 
 ## Project Details
+### UN Sustainable Development Goals
+
+The project aligns with four SDGs: No Poverty, Zero Hunger, Quality Education, and Decent Work and Economic Growth.
+<!-- GOALS -->
+## Our Goals
+No Poverty               | Zero Hunger             |   Quality Education                  |  Decent Work and Economic Growth
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-01_480.png?raw=true)|![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-02_480.png?raw=true)|![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-04_480.png?raw=tru)|![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-08_480.png?raw=true)|
 
 ### Problem Statement
 
@@ -49,10 +62,6 @@ The platform centralizes information, connecting helping minds within specific a
 
 ![8b824041-82c0-4d61-9aee-5cdc44270a4d](https://github.com/AKACHI-4/Aid-Employ/assets/99159580/4c4ee604-0c73-42db-b0ef-5ceaffdc592b)
 
-### UN Sustainable Development Goals
-
-The project aligns with four SDGs: No Poverty, Zero Hunger, Quality Education, and Decent Work and Economic Growth.
-
 ### Architecture
 
 Architecture mirrors social media platform, with users and communities posting social drives. Backend processes and Gemini-Pro chat model assist in getting users drives data efficiently.
@@ -67,18 +76,31 @@ Architecture mirrors social media platform, with users and communities posting s
 ![d61a7a49-89d7-4395-abb2-25e204d0c8db](https://github.com/AKACHI-4/Aid-Employ/assets/99159580/9b1c4640-b104-4ba1-8e9a-6b7564ceba70)
 
 ### Challenges
-
-The primary challenge is with Gemini-Pro's unavailability for fine-tuning. The team considers move ahead with a simpler telegram chatbot and used gemini chat for the filtering and tagging.
+The primary challenge was with Gemini-Pro's unavailability for fine-tuning. The team considers move ahead with a python script based telegram chatbot.
+Multimodal Tasks with the Gemini API [firestore-multimodal-genai@0.0.8] Extension for the filtering and tagging of posts .
 
 ### Future Steps
+**Under Development**
+-  Integrating Google Maps to platform so that users can perform food/Cloth/toy deliver volunteering while going on evening walk. (resources available for charity can be posted in platform with pickup location).
 
-The team envisions direct government involvement, allowing efficient management of government-owned and local social welfare programs. Integration of AI models for program verification is a potential future enhancement.
+**Potential Scaling**
+The team envisions direct government involvement, allowing efficient management of government-owned and local social welfare programs. 
+Integration of AI models for program verification is a potential future enhancement.
 
 ### Scaling
 
 To scale further, we are planning to keep the user interface minimal, implement automation for faster build and release, and ensure accessibility across devices (cross-origin support).
 
 ## Getting Started
+
+### Prerequisites
+
+To run any Android application built with Flutter you need to configure the enviroments in your machine, you can do this following the the tutorial provided by Google in [Flutter website](https://flutter.dev/docs/get-started/install)
+
+- Flutter SDK
+- Android Studio (to download Android SDK) [Installation Guide](https://developer.android.com/studio/install) 
+- Xcode (for iOS development only) 
+- Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
 
 ### Flutter
 
@@ -103,7 +125,24 @@ To scale further, we are planning to keep the user interface minimal, implement 
   ```bash
   flutter run -d chrome --web-renderer html
   ```
-[Ada Telegram Chatbot](https://t.me/Ada_R01_bot)
+
+<!-- FIREBASE -->
+## Firebase
+
+List of Communities             | List of Users 
+:-------------------------:|:-------------------------:|
+![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Firebase_1.png?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Firebase_3.png?raw=true)|
+
+Posts on Platform [Tagged using Gemini]             | Usage Analytics
+:-------------------------:|:-------------------------:|
+![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Firebase_2.png?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Firebase_4.png?raw=true)|
+
+
+
+<!-- YOUTUBE -->
+## 📌 JOURNEY
+- Final Submission Video [YouTube](https://youtu.be/YZhykdsAA7E)
+- Regional Bootcamp Submission [YouTube](https://youtu.be/e0kt3fsICAI)
 
 ## License
 
