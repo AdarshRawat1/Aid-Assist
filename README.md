@@ -16,8 +16,10 @@
     ·
    <a href="./Aid-Employ-MVP.apk">View APK</a>
     ·
-    <a href="https://github.com/AdarshRawat1/Solution-challenge-Aid-Assist/issues">Report Bug / Request Feature</a>
+    <a href="https://github.com/AdarshRawat1/Solution-challenge-Aid-Assist/issues">Report Bug / Request Feature</a> 
   </p>
+   
+<p align="center"> [Ada Telegram Chatbot](https://t.me/Ada_R01_bot) </p>
 
 <br>
 
@@ -86,6 +88,15 @@ To scale further, we are planning to keep the user interface minimal, implement 
 
 ## Getting Started
 
+### Prerequisites
+
+To run any Android application built with Flutter you need to configure the enviroments in your machine, you can do this following the the tutorial provided by Google in [Flutter website](https://flutter.dev/docs/get-started/install)
+
+- Flutter SDK
+- Android Studio (to download Android SDK)
+- Xcode (for iOS develop only)
+- Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
+
 ### Flutter
 
 - Clone the repository:
@@ -109,7 +120,7 @@ To scale further, we are planning to keep the user interface minimal, implement 
   ```bash
   flutter run -d chrome --web-renderer html
   ```
-[Ada Telegram Chatbot](https://t.me/Ada_R01_bot)
+
 
 ## License
 
