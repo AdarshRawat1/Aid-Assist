@@ -140,15 +140,15 @@ Posts on Platform [Tagged using Gemini]             | Usage Analytics
 
 Sign IN Screen              | Home Screen            | User's Community list                | Seach Option for Community Search
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_1.png?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_2.png?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_3.png?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_4.png?raw=true)|
+![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_1.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_2.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_3.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_4.jpg?raw=true)|
 
  Add Post Screen  | Text With link Post Screen        | Image Post Screen           | Text With Description post 
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_5.png?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_6.png?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_7.png?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_8.png?raw=true)|
+![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_5.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_6.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_7.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_8.jpg?raw=true)|
 
 Profile Dashboard with Reputation          |    User Profile Drawer          | Home Screen Light mode     
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_9.png?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_10.png?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_11.png?raw=true)|
+![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_9.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_10.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/Screenshots/Apk_11.jpg?raw=true)|
 
 <!-- SCREENSHOTS -->
 ## Screenshots of Telegram Bot [APK]
