@@ -155,7 +155,7 @@ Profile Dashboard with Reputation          |    User Profile Drawer          | H
 
 Initial             | First Response          | List of Drives Based on location [Community]              
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Tele_1.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Tele_2.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Tele_3.jpg?raw=true)|
+![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Tele_1.png?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Tele_2.png?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Tele_3.png?raw=true)|
 
 
 
