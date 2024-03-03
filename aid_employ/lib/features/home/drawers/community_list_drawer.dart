@@ -16,7 +16,7 @@ class CommunityListDrawer extends ConsumerWidget {
   }
 
   void navigateToCommunity(BuildContext context, Community community) {
-    Routemaster.of(context).push('/r/${community.name}');
+    Routemaster.of(context).push('/Aid/${community.name}');
   }
 
   @override
@@ -46,7 +46,7 @@ class CommunityListDrawer extends ConsumerWidget {
                             leading: CircleAvatar(
                               backgroundImage: NetworkImage(community.avatar),
                             ),
-                            title: Text('r/${community.name}'),
+                            title: Text('Aid/${community.name}'),
                             onTap: () {
                               navigateToCommunity(context, community);
                             },
