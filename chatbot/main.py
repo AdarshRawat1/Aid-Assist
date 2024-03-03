@@ -68,9 +68,7 @@ async def help_command(update: Update,
 
 async def location_handler(update: Update,
                            context: ContextTypes.DEFAULT_TYPE) -> None:
-  
-  user_message = update.message.text.capitalize()
-
+  user_message = update.message.text.lower()
 
   collection_ref = db.collection("posts")
 
@@ -86,10 +84,7 @@ async def location_handler(update: Update,
   for document in documents:
     title = document.get("title").capitalize()
     community = document.get("communityName").capitalize()
-
-    description = document.get("description")
-    if description :
-      description = description.capitalize()
+    description = document.get("description").capitalize()
     username = document.get("username").capitalize()
 
     reply_text += (f"<b>📌 Title:</b> {title}\n"

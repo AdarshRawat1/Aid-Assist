@@ -19,7 +19,6 @@ class HomeScreen extends ConsumerStatefulWidget {
 
 class _HomeScreenState extends ConsumerState<HomeScreen> {
   int _page = 0;
-  String _title = 'Home';
 
   void displayDrawer(BuildContext context) {
     Scaffold.of(context).openDrawer();
@@ -32,11 +31,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   void onPageChanged(int page) {
     setState(() {
       _page = page;
-      if (page == 1) {
-        _title = 'Add Post';
-      } else {
-        _title = 'Home';
-      }
     });
   }
 
@@ -48,9 +42,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          _title
-        ),
+        title: const Text('Home'),
         centerTitle: false,
         leading: Builder(builder: (context) {
           return IconButton(
@@ -64,6 +56,12 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
               showSearch(context: context, delegate: SearchCommunityDelegate(ref));
             },
             icon: const Icon(Icons.search),
+          ),
+          IconButton(
+            onPressed: () {
+              Routemaster.of(context).push('/add-post');
+            },
+            icon: const Icon(Icons.add),
           ),
           Builder(builder: (context) {
             return IconButton(
