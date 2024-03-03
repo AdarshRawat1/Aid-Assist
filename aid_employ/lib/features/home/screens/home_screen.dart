@@ -65,12 +65,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
             },
             icon: const Icon(Icons.search),
           ),
-          IconButton(
-            onPressed: () {
-              Routemaster.of(context).push('/add-post');
-            },
-            icon: const Icon(Icons.add),
-          ),
           Builder(builder: (context) {
             return IconButton(
               icon: CircleAvatar(
