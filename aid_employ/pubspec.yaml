@@ -50,6 +50,7 @@ dependencies:
   any_link_preview: ^3.0.1
   google_gemini: ^0.1.2
   google_generative_ai: ^0.2.0
+  delayed_display: ^2.0.0
   
 dev_dependencies:
   flutter_test:

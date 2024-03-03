@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:delayed_display/delayed_display.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:aid_employ/core/common/error_text.dart';
 import 'package:aid_employ/core/common/loader.dart';
@@ -67,13 +68,18 @@ class _CommentsScreenState extends ConsumerState<CommentsScreen> {
                   ref.watch(getPostCommentsProvider(widget.postId)).when(
                         data: (data) {
                           return Expanded(
-                            child: ListView.builder(
-                              itemCount: data.length,
-                              itemBuilder: (BuildContext context, int index) {
-                                final comment = data[index];
-                                return CommentCard(comment: comment);
-                              },
-                            ),
+                             child: ListView.separated(
+                                itemCount: data.length,
+                                separatorBuilder:
+                                    (BuildContext context, int index) =>
+                                        const SizedBox(),
+                                itemBuilder: (BuildContext context, int index) {
+                                  final comment = data[index];
+                                  return DelayedDisplay(
+                                      delay: Duration(milliseconds: 5 * index),
+                                      child: CommentCard(comment: comment));
+                                }
+                             ),
                           );
                         },
                         error: (error, stackTrace) {
