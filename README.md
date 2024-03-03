@@ -14,7 +14,7 @@
     <br />
     <a href="https://drive.google.com/file/d/1Ljn3FPYshn7CR5IN_f8OcxU-pO9WF7yq/view?usp=sharing">View Demo</a>
     ·
-   <a href="https://github.com/AdarshRawat1/Aid-Assist/releases/download/Stable/app-release.V1.2.2.apk">View / Download APK</a>
+   <a href="https://github.com/AdarshRawat1/Aid-Assist/releases/download/Latest/app-release.V1.2.2.apk"> Download APK</a>
     ·
     <a href="https://github.com/AdarshRawat1/Solution-challenge-Aid-Assist/issues">Report Bug / Request Feature</a> 
   </p>
