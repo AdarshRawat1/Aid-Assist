@@ -57,13 +57,6 @@ class CommunityController extends StateNotifier<bool> {
   void createCommunity(String name, BuildContext context) async {
     state = true;
     final uid = _ref.read(userProvider)?.uid ?? '';
-    
-    if (name.contains(' ')) {
-      showSnackBar(context, 'Community name cannot contain a space!');
-      state = false;
-      return;
-    }
-
     Community community = Community(
       id: name,
       name: name,
@@ -75,10 +68,10 @@ class CommunityController extends StateNotifier<bool> {
 
     final res = await _communityRepository.createCommunity(community);
     state = false;
-    res.fold(
-      (l) => showSnackBar(context, 'Community created successfully'),
-      (r) => Routemaster.of(context).pop(),
-    );
+    res.fold((l) => showSnackBar(context, l.message), (r) {
+      showSnackBar(context, 'Community created successfully!');
+      Routemaster.of(context).pop();
+    });
   }
 
   void joinCommunity(Community community, BuildContext context) async {
