@@ -32,10 +32,14 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   void onPageChanged(int page) {
     setState(() {
       _page = page;
-      if (page == 1) {
-        _title = 'Add Post';
-      } else {
-        _title = 'Home';
+      if (page == 0) {
+         _title = 'Home';
+        
+      } else if (page == 2 ) {
+       _title = 'Add Post';
+      }
+      else {
+        _title='Donate';
       }
     });
   }
@@ -86,11 +90,15 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
               items: const [
                 BottomNavigationBarItem(
                   icon: Icon(Icons.home),
-                  label: '',
+                  label: 'Drives',
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.add),
-                  label: '',
+                  label: 'Add Drive',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.add_location_alt),
+                  label: 'Donate',
                 ),
               ],
               onTap: onPageChanged,
