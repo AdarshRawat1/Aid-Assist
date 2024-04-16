@@ -16,7 +16,7 @@ class CommunityListDrawer extends ConsumerWidget {
   }
 
   void navigateToCommunity(BuildContext context, Community community) {
-    Routemaster.of(context).push('/Aid/${community.name}');
+    Routemaster.of(context).push('/r/${community.name}');
   }
 
   @override
