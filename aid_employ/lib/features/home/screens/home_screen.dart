@@ -35,8 +35,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       if (page == 0) {
          _title = 'Home';
         
-      } else if (page == 2 ) {
-       _title = 'Add Post';
+      } else if (page == 1 ) {
+       _title = 'Add Drive';
       }
       else {
         _title='Donate';
@@ -85,7 +85,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       bottomNavigationBar: isGuest || kIsWeb
           ? null
           : CupertinoTabBar(
-              activeColor: currentTheme.iconTheme.color,
+              activeColor: Colors.blue,
               backgroundColor: currentTheme.backgroundColor,
               items: const [
                 BottomNavigationBarItem(
