@@ -10,10 +10,10 @@ class DonationScreen extends StatefulWidget {
 
 
 class _DonationScreenState extends State<DonationScreen> {
-  final LocationController=location();
+  final LocationController=Location();
 
-  static const googlePlex = LatLng(30.2690, 77.9916);
-  static const googlePlex2 = LatLng(30.29, 78);
+  static const googlePlex = LatLng(37.1, -122.084);
+  static const googlePlex2 = LatLng(37.2, -122.184);
   
 LatLng? currentPosition;
 
@@ -27,12 +27,19 @@ LatLng? currentPosition;
   @override
    // ignore: prefer_const_constructors
    Widget build(BuildContext context)=> Scaffold(
-      body: GoogleMap(
+      body:currentPosition == null
+      ?const Center(child: CircularProgressIndicator())
+      : GoogleMap(
         initialCameraPosition: const CameraPosition(
           target: googlePlex,
           zoom: 13,
         ),
         markers: {
+          Marker(
+              markerId: MarkerId('user'),
+              icon: BitmapDescriptor.defaultMarker,
+              position: currentPosition!,
+          ),
           const Marker(
             markerId: MarkerId('Source'),
             icon :BitmapDescriptor.defaultMarker,
