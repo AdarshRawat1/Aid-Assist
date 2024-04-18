@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
+import 'package:flutter_polyline_points/flutter_polyline_points.dart';
+import 'package:aid_employ/core/constants/constants.dart';
 
 class DonationScreen extends StatefulWidget {
    const DonationScreen({super.key});
@@ -12,18 +14,26 @@ class DonationScreen extends StatefulWidget {
 class _DonationScreenState extends State<DonationScreen> {
   final LocationController=Location();
 
-  static const googlePlex = LatLng(37.1, -122.084);
+  static const googlePlex = LatLng(30.2690, 77.9916);
   static const googlePlex2 = LatLng(37.2, -122.184);
   
 LatLng? currentPosition;
+Map <PolylineId, Polyline> polylines={};
+
 
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance
-    .addPostFrameCallback((_)async => await fetchlocationUpdates());
+    .addPostFrameCallback((_)async => await initializeMap());
   }
   
+  Future <void> initializeMap() async {
+    await fetchlocationUpdates();
+    final coordinates= await fetchPolylinePoints();
+    generatePolyLineFromPoints(coordinates);
+  }
+
   @override
    // ignore: prefer_const_constructors
    Widget build(BuildContext context)=> Scaffold(
@@ -51,6 +61,7 @@ LatLng? currentPosition;
               position: googlePlex2,
             ),
           },
+          polylines:Set<Polyline>.of(polylines.values),
       ),
    );
 
@@ -85,6 +96,39 @@ Future<void> fetchlocationUpdates () async {
           }
   });
 }
+
+Future<List<LatLng>> fetchPolylinePoints()async {
+  final polylinePoints=PolylinePoints();
+  final result = await polylinePoints.getRouteBetweenCoordinates(
+    Constants.googleMapsApiKey,
+    PointLatLng(googlePlex.latitude,googlePlex.longitude) ,
+     PointLatLng(googlePlex2.latitude,googlePlex2.longitude)
+    );
+    if(result.points.isNotEmpty){
+      return result.points
+      .map((point)=> LatLng(point.latitude, point.longitude))
+      .toList();
+    }
+    else {
+      debugPrint(result.errorMessage);
+      return [];
+    }
 }
+
+Future<void> generatePolyLineFromPoints( 
+  List<LatLng> polylineCoordinates) async{
+    const id = PolylineId('polyline');
+
+    final polyline = Polyline(
+      polylineId:id,
+      color: Colors.blue,
+      points:polylineCoordinates,
+      width: 5,
+    );
+  setState(()=> polylines[id]=polyline);
+
+  }
+}
+
   
   
