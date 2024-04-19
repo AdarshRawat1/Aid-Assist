@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
-import 'package:aid_employ/core/constants/constants.dart';
 
 class DonationScreen extends StatefulWidget {
    const DonationScreen({super.key});
@@ -12,7 +11,7 @@ class DonationScreen extends StatefulWidget {
 
 
 class _DonationScreenState extends State<DonationScreen> {
-  final LocationController=Location();
+  final locationController=Location();
 
   static const googlePlex = LatLng(30.2690, 77.9916);
   static const googlePlex2 = LatLng(37.2, -122.184);
@@ -68,23 +67,23 @@ Map <PolylineId, Polyline> polylines={};
 Future<void> fetchlocationUpdates () async {
   bool serviceEnabled;
   PermissionStatus permissionGranted;
-  serviceEnabled = await LocationController.serviceEnabled();
+  serviceEnabled = await locationController.serviceEnabled();
   if(serviceEnabled){
-    serviceEnabled= await LocationController.requestService();
+    serviceEnabled= await locationController.requestService();
   }
   else {
     return;
   }
 
-  permissionGranted = await LocationController.hasPermission();
+  permissionGranted = await locationController.hasPermission();
   if(permissionGranted==PermissionStatus.denied){
-    permissionGranted=await LocationController.requestPermission();
+    permissionGranted=await locationController.requestPermission();
     if(permissionGranted!=PermissionStatus.granted){
       return;
     }
   }
 
-  LocationController.onLocationChanged.listen((currentLocation){
+  locationController.onLocationChanged.listen((currentLocation){
     if(currentLocation.latitude!=null &&
           currentLocation.longitude!=null){
             setState(() {
@@ -97,10 +96,11 @@ Future<void> fetchlocationUpdates () async {
   });
 }
 
-Future<List<LatLng>> fetchPolylinePoints()async {
+Future<List<LatLng>> fetchPolylinePoints() async {
   final polylinePoints=PolylinePoints();
+  const googleMapsApiKey="AIzaSyCaWReheCbeGeRxq8tNnuLuTmJQ3r7VGxU";
   final result = await polylinePoints.getRouteBetweenCoordinates(
-    Constants.googleMapsApiKey,
+    googleMapsApiKey,
     PointLatLng(googlePlex.latitude,googlePlex.longitude) ,
      PointLatLng(googlePlex2.latitude,googlePlex2.longitude)
     );
@@ -123,7 +123,7 @@ Future<void> generatePolyLineFromPoints(
       polylineId:id,
       color: Colors.blue,
       points:polylineCoordinates,
-      width: 5,
+      width: 3,
     );
   setState(()=> polylines[id]=polyline);
 
