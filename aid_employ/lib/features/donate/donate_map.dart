@@ -14,6 +14,8 @@ class _DonationScreenState extends State<DonationScreen> {
   final locationController=Location();
 
   static const Donation_Center_1 = LatLng(30.2690, 77.9916);
+  BitmapDescriptor? markerIcon;
+  
 
 LatLng? currentPosition;
 Map <PolylineId, Polyline> polylines={};
@@ -21,6 +23,7 @@ Map <PolylineId, Polyline> polylines={};
 
   @override
   void initState() {
+    loadMarkerIcon(); 
     super.initState();
     WidgetsBinding.instance
     .addPostFrameCallback((_)async => await initializeMap());
@@ -40,7 +43,7 @@ Map <PolylineId, Polyline> polylines={};
       : GoogleMap(
         initialCameraPosition: const CameraPosition(
           target: Donation_Center_1,
-          zoom: 13,
+          zoom: 17,
         ),
         markers: {
           Marker(
@@ -48,9 +51,9 @@ Map <PolylineId, Polyline> polylines={};
               icon: BitmapDescriptor.defaultMarker,
               position: currentPosition!,
           ),
-          const Marker(
+          Marker(
             markerId: MarkerId('Donation_Center_1'),
-            icon :BitmapDescriptor.defaultMarker,
+            icon :markerIcon ?? BitmapDescriptor.defaultMarker,
             position: Donation_Center_1,
             infoWindow: InfoWindow(
                       title: 'Children of India Donation Collection Center',
@@ -66,6 +69,13 @@ Map <PolylineId, Polyline> polylines={};
           polylines:Set<Polyline>.of(polylines.values),
       ),
    );
+Future<void> loadMarkerIcon() async {
+    markerIcon = await BitmapDescriptor.fromAssetImage(
+      const ImageConfiguration(),
+      'assets/images/Donation_center.png',
+    );
+  }
+
 
 Future<void> fetchlocationUpdates () async {
   bool serviceEnabled;
