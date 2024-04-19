@@ -13,9 +13,8 @@ class DonationScreen extends StatefulWidget {
 class _DonationScreenState extends State<DonationScreen> {
   final locationController=Location();
 
-  static const googlePlex = LatLng(30.2690, 77.9916);
-  static const googlePlex2 = LatLng(37.2, -122.184);
-  
+  static const Donation_Center_1 = LatLng(30.2690, 77.9916);
+
 LatLng? currentPosition;
 Map <PolylineId, Polyline> polylines={};
 
@@ -40,7 +39,7 @@ Map <PolylineId, Polyline> polylines={};
       ?const Center(child: CircularProgressIndicator())
       : GoogleMap(
         initialCameraPosition: const CameraPosition(
-          target: googlePlex,
+          target: Donation_Center_1,
           zoom: 13,
         ),
         markers: {
@@ -50,15 +49,19 @@ Map <PolylineId, Polyline> polylines={};
               position: currentPosition!,
           ),
           const Marker(
-            markerId: MarkerId('Source'),
+            markerId: MarkerId('Donation_Center_1'),
             icon :BitmapDescriptor.defaultMarker,
-            position: googlePlex,
-            ),
-           const Marker(
-              markerId: MarkerId('Destination'),
-              icon: BitmapDescriptor.defaultMarker,
-              position: googlePlex2,
-            ),
+            position: Donation_Center_1,
+            infoWindow: InfoWindow(
+                      title: 'Children of India Donation Collection Center',
+                      snippet: 'Near Graphic era, Clement town,Dehradun ',
+                    ),
+          ),
+          //  const Marker(
+          //     markerId: MarkerId('Donation POint 2'),
+          //     icon: BitmapDescriptor.defaultMarker,
+          //     position: Donation_Center_2,
+          //   ),
           },
           polylines:Set<Polyline>.of(polylines.values),
       ),
@@ -101,8 +104,8 @@ Future<List<LatLng>> fetchPolylinePoints() async {
   const googleMapsApiKey="AIzaSyCaWReheCbeGeRxq8tNnuLuTmJQ3r7VGxU";
   final result = await polylinePoints.getRouteBetweenCoordinates(
     googleMapsApiKey,
-    PointLatLng(googlePlex.latitude,googlePlex.longitude) ,
-     PointLatLng(googlePlex2.latitude,googlePlex2.longitude)
+    PointLatLng(currentPosition!.latitude,currentPosition!.longitude) ,
+     PointLatLng(Donation_Center_1.latitude, Donation_Center_1.longitude)
     );
     if(result.points.isNotEmpty){
       return result.points
