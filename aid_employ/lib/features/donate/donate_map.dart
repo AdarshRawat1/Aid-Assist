@@ -43,8 +43,8 @@ Map <PolylineId, Polyline> polylines={};
       body:currentPosition == null
       ?const Center(child: CircularProgressIndicator())
       : GoogleMap(
-        initialCameraPosition: const CameraPosition(
-          target: Donation_Center_1,
+        initialCameraPosition: CameraPosition(
+          target: currentPosition?? Donation_Center_1,
           zoom: 17,
         ),
         markers: {
