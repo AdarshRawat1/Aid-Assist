@@ -32,10 +32,14 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   void onPageChanged(int page) {
     setState(() {
       _page = page;
-      if (page == 1) {
-        _title = 'Add Post';
-      } else {
-        _title = 'Home';
+      if (page == 0) {
+         _title = 'Home';
+        
+      } else if (page == 1 ) {
+       _title = 'Add Drive';
+      }
+      else {
+        _title='Donate';
       }
     });
   }
@@ -81,16 +85,20 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       bottomNavigationBar: isGuest || kIsWeb
           ? null
           : CupertinoTabBar(
-              activeColor: currentTheme.iconTheme.color,
+              activeColor: Colors.blue,
               backgroundColor: currentTheme.backgroundColor,
               items: const [
                 BottomNavigationBarItem(
                   icon: Icon(Icons.home),
-                  label: '',
+                  label: 'Drives',
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.add),
-                  label: '',
+                  label: 'Add Drive',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.add_location_alt),
+                  label: 'Donate',
                 ),
               ],
               onTap: onPageChanged,

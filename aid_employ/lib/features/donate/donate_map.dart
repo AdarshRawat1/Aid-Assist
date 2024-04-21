@@ -1,0 +1,147 @@
+import 'package:flutter/material.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:location/location.dart';
+import 'package:flutter_polyline_points/flutter_polyline_points.dart';
+
+class DonationScreen extends StatefulWidget {
+   const DonationScreen({super.key});
+  @override
+  State<DonationScreen> createState() => _DonationScreenState();
+}
+
+
+class _DonationScreenState extends State<DonationScreen> {
+  final locationController=Location();
+
+  static const Donation_Center_1 = LatLng(30.2690, 77.9916);
+  BitmapDescriptor? markerIcon;
+  
+
+LatLng? currentPosition;
+Map <PolylineId, Polyline> polylines={};
+
+
+  @override
+  void initState() {
+    loadMarkerIcon(); 
+    super.initState();
+    WidgetsBinding.instance
+    .addPostFrameCallback((_)async => await initializeMap());
+  }
+  
+  Future <void> initializeMap() async {
+    await fetchlocationUpdates();
+    final coordinates= await fetchPolylinePoints();
+    generatePolyLineFromPoints(coordinates);
+  }
+
+  @override
+   // ignore: prefer_const_constructors
+   Widget build(BuildContext context)=> Scaffold(
+      body:currentPosition == null
+      ?const Center(child: CircularProgressIndicator())
+      : GoogleMap(
+        initialCameraPosition: const CameraPosition(
+          target: Donation_Center_1,
+          zoom: 17,
+        ),
+        markers: {
+          Marker(
+              markerId: MarkerId('user'),
+              icon: BitmapDescriptor.defaultMarker,
+              position: currentPosition!,
+          ),
+          Marker(
+            markerId: MarkerId('Donation_Center_1'),
+            icon :markerIcon ?? BitmapDescriptor.defaultMarker,
+            position: Donation_Center_1,
+            infoWindow: InfoWindow(
+                      title: 'Children of India Donation Collection Center',
+                      snippet: 'Near Graphic era, Clement town,Dehradun ',
+                    ),
+          ),
+          //  const Marker(
+          //     markerId: MarkerId('Donation POint 2'),
+          //     icon: BitmapDescriptor.defaultMarker,
+          //     position: Donation_Center_2,
+          //   ),
+          },
+          polylines:Set<Polyline>.of(polylines.values),
+      ),
+   );
+Future<void> loadMarkerIcon() async {
+    markerIcon = await BitmapDescriptor.fromAssetImage(
+      const ImageConfiguration(),
+      'assets/images/Donation_center.png',
+    );
+  }
+
+
+Future<void> fetchlocationUpdates () async {
+  bool serviceEnabled;
+  PermissionStatus permissionGranted;
+  serviceEnabled = await locationController.serviceEnabled();
+  if(serviceEnabled){
+    serviceEnabled= await locationController.requestService();
+  }
+  else {
+    return;
+  }
+
+  permissionGranted = await locationController.hasPermission();
+  if(permissionGranted==PermissionStatus.denied){
+    permissionGranted=await locationController.requestPermission();
+    if(permissionGranted!=PermissionStatus.granted){
+      return;
+    }
+  }
+
+  locationController.onLocationChanged.listen((currentLocation){
+    if(currentLocation.latitude!=null &&
+          currentLocation.longitude!=null){
+            setState(() {
+              currentPosition=LatLng(
+                currentLocation.latitude!,
+                currentLocation.longitude!,
+              );
+            });
+          }
+  });
+}
+
+Future<List<LatLng>> fetchPolylinePoints() async {
+  final polylinePoints=PolylinePoints();
+  const googleMapsApiKey="AIzaSyCaWReheCbeGeRxq8tNnuLuTmJQ3r7VGxU";
+  final result = await polylinePoints.getRouteBetweenCoordinates(
+    googleMapsApiKey,
+    PointLatLng(currentPosition!.latitude,currentPosition!.longitude) ,
+     PointLatLng(Donation_Center_1.latitude, Donation_Center_1.longitude)
+    );
+    if(result.points.isNotEmpty){
+      return result.points
+      .map((point)=> LatLng(point.latitude, point.longitude))
+      .toList();
+    }
+    else {
+      debugPrint(result.errorMessage);
+      return [];
+    }
+}
+
+Future<void> generatePolyLineFromPoints( 
+  List<LatLng> polylineCoordinates) async{
+    const id = PolylineId('polyline');
+
+    final polyline = Polyline(
+      polylineId:id,
+      color: Colors.blue,
+      points:polylineCoordinates,
+      width: 3,
+    );
+  setState(()=> polylines[id]=polyline);
+
+  }
+}
+
+  
+  

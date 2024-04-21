@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:aid_employ/features/feed/feed_screen.dart';
 import 'package:aid_employ/features/home/screens/home_screen.dart';
 import 'package:aid_employ/features/post/screens/add_post_screen.dart';
-
+import 'package:aid_employ/features/donate/donate_map.dart';
+const String googleMapsApiKey="___Secret ___";
 class Constants {
   static const logoPath = 'assets/images/logo.png';
   static const loginEmotePath = 'assets/images/loginEmote.png';
@@ -16,6 +17,7 @@ class Constants {
   static const tabWidgets = [
     FeedScreen(),
     AddPostScreen(),
+    DonationScreen(),
   ];
 
   static const IconData up = IconData(0xe800, fontFamily: 'MyFlutterApp', fontPackage: null);

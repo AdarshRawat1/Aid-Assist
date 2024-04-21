@@ -61,17 +61,6 @@ class _MyAppState extends ConsumerState<MyApp> {
               },
             ),
             routeInformationParser: const RoutemasterParser(),
-            builder: (context, child) {
-              return Scaffold(
-                body: child,
-                floatingActionButton: FloatingActionButton(
-                  onPressed: () {
-                    Routemaster.of(context).push('/chat-bot');
-                  },
-                  child: const Icon(Icons.message),
-                ),
-              );
-            },
           ),
           error: (error, stackTrace) => ErrorText(error: error.toString()),
           loading: () => const Loader(),
