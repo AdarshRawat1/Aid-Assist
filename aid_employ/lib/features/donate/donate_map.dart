@@ -15,7 +15,8 @@ class _DonationScreenState extends State<DonationScreen> {
 
   static const Donation_Center_1 = LatLng(30.2690, 77.9916);
   static const Donation_Center_2 = LatLng(22.6708,  71.5724);
-  BitmapDescriptor? markerIcon;
+  BitmapDescriptor? donationCenterIcon;
+  BitmapDescriptor? userIcon;
   
 
 LatLng? currentPosition;
@@ -24,7 +25,7 @@ Map <PolylineId, Polyline> polylines={};
 
   @override
   void initState() {
-    loadMarkerIcon(); 
+    loadIcons(); 
     super.initState();
     WidgetsBinding.instance
     .addPostFrameCallback((_)async => await initializeMap());
@@ -49,12 +50,12 @@ Map <PolylineId, Polyline> polylines={};
         markers: {
           Marker(
               markerId: MarkerId('user'),
-              icon: BitmapDescriptor.defaultMarker,
+              icon :userIcon ?? BitmapDescriptor.defaultMarker,
               position: currentPosition!,
           ),
           Marker(
             markerId: MarkerId('Donation_Center_1'),
-            icon :markerIcon ?? BitmapDescriptor.defaultMarker,
+            icon :donationCenterIcon ?? BitmapDescriptor.defaultMarker,
             position: Donation_Center_1,
             infoWindow: InfoWindow(
                       title: 'Children of India Donation Collection Center',
@@ -63,7 +64,7 @@ Map <PolylineId, Polyline> polylines={};
           ),
            Marker(
               markerId: MarkerId('Donation POint 2'),
-              icon: markerIcon ?? BitmapDescriptor.defaultMarker,
+              icon: donationCenterIcon ?? BitmapDescriptor.defaultMarker,
               position: Donation_Center_2,
               infoWindow: InfoWindow(
                         title: 'Poverty Fund Donation Collection Center',
@@ -74,13 +75,16 @@ Map <PolylineId, Polyline> polylines={};
           polylines:Set<Polyline>.of(polylines.values),
       ),
    );
-Future<void> loadMarkerIcon() async {
-    markerIcon = await BitmapDescriptor.fromAssetImage(
+Future<void> loadIcons() async {
+    donationCenterIcon = await BitmapDescriptor.fromAssetImage(
       const ImageConfiguration(),
       'assets/images/Donation_center.png',
     );
+    userIcon = await BitmapDescriptor.fromAssetImage(
+      const ImageConfiguration(),
+      'assets/images/userLocation.png',
+    );
   }
-
 
 Future<void> fetchlocationUpdates () async {
   bool serviceEnabled;
