@@ -14,6 +14,7 @@ class _DonationScreenState extends State<DonationScreen> {
   final locationController=Location();
 
   static const Donation_Center_1 = LatLng(30.2690, 77.9916);
+  static const Donation_Center_2 = LatLng(22.6708,  71.5724);
   BitmapDescriptor? markerIcon;
   
 
@@ -57,14 +58,18 @@ Map <PolylineId, Polyline> polylines={};
             position: Donation_Center_1,
             infoWindow: InfoWindow(
                       title: 'Children of India Donation Collection Center',
-                      snippet: 'Near Graphic era, Clement town,Dehradun ',
+                      snippet: 'Near Graphic era, Clement town,Dehradun Ph no - 1234567890'
                     ),
           ),
-          //  const Marker(
-          //     markerId: MarkerId('Donation POint 2'),
-          //     icon: BitmapDescriptor.defaultMarker,
-          //     position: Donation_Center_2,
-          //   ),
+           Marker(
+              markerId: MarkerId('Donation POint 2'),
+              icon: markerIcon ?? BitmapDescriptor.defaultMarker,
+              position: Donation_Center_2,
+              infoWindow: InfoWindow(
+                        title: 'Poverty Fund Donation Collection Center',
+                        snippet:
+                            'Gujrat - 1234567890'),
+            ),
           },
           polylines:Set<Polyline>.of(polylines.values),
       ),
