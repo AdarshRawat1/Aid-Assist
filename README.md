@@ -17,6 +17,8 @@
    <a href="https://github.com/AdarshRawat1/Aid-Assist/releases/download/Latest/app-release.V1.2.2.apk"> Download APK</a>
     ·
     <a href="https://github.com/AdarshRawat1/Solution-challenge-Aid-Assist/issues">Report Bug / Request Feature</a> 
+   - 
+   <a href="https://t.me/Ada_R01_bot"> Telegram Chatbot</a> 
   </p>
 
 <br>
