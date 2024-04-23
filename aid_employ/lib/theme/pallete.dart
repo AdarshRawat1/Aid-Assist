@@ -12,6 +12,7 @@ class Pallete {
   static const greyColor = Color.fromRGBO(26, 39, 45, 1); // secondary color
   static const drawerColor = Color.fromRGBO(18, 18, 18, 1);
   static const whiteColor = Colors.white;
+  static const themeColor = Color.fromRGBO(0, 129, 243, 1);
   static var redColor = Colors.red.shade500;
   static var blueColor = Colors.blue.shade300;
 
@@ -22,7 +23,7 @@ class Pallete {
     appBarTheme: const AppBarTheme(
       backgroundColor: drawerColor,
       iconTheme: IconThemeData(
-        color: whiteColor,
+        color: themeColor,
       ),
     ),
     drawerTheme: const DrawerThemeData(
@@ -39,7 +40,7 @@ class Pallete {
       backgroundColor: whiteColor,
       elevation: 0,
       iconTheme: IconThemeData(
-        color: blackColor,
+        color: themeColor,
       ),
     ),
     drawerTheme: const DrawerThemeData(

@@ -1,6 +1,7 @@
 // loggedOut
 // loggedIn
 
+import 'package:aid_employ/features/donate/donate_map.dart';
 import 'package:flutter/material.dart';
 import 'package:aid_employ/features/auth/screens/login_screen.dart';
 import 'package:aid_employ/features/community/screens/add_mods_screen.dart';
@@ -66,6 +67,9 @@ final loggedInRoute = RouteMap(
         ),
     '/add-post': (routeData) => const MaterialPage(
           child: AddPostScreen(),
+        ),
+    '/donate-map': (routeData) => const MaterialPage(
+          child: DonationScreen(),
         ),
   },
 );

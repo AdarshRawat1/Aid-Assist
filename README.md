@@ -2,7 +2,7 @@
 <h3 align="center"> Assisting the aid to ensure every step forward is a leap towards brighter futures. </h3>
 <p align="center">
   <a href="https://github.com/AKACHI-4/Aid-Employ/releases">
-    <img wwidth="120" height="120" alt="Aid Employ" src="https://github.com/AdarshRawat1/Solution-challenge-Flutter/assets/100958893/064dd7be-022b-4920-9ab2-412f283a1b1e">
+    <img wwidth="120" height="120" alt="Aid Assist" src="https://github.com/AdarshRawat1/Solution-challenge-Flutter/assets/100958893/064dd7be-022b-4920-9ab2-412f283a1b1e">
   </a>
 </p>
 
@@ -14,69 +14,172 @@
     <br />
     <a href="https://drive.google.com/file/d/1Ljn3FPYshn7CR5IN_f8OcxU-pO9WF7yq/view?usp=sharing">View Demo</a>
     ·
-   <a href="./Aid-Employ-MVP.apk">View APK</a>
+   <a href="https://github.com/AdarshRawat1/Aid-Assist/releases/download/Latest/app-release.V1.2.2.apk"> Download APK</a>
     ·
-    <a href="https://github.com/AKACHI-4/Aid-Employ/issues">Report Bug / Request Feature</a>
+    <a href="https://github.com/AdarshRawat1/Solution-challenge-Aid-Assist/issues">Report Bug / Request Feature</a> 
+   - 
+   <a href="https://t.me/Ada_R01_bot"> Telegram Chatbot</a> 
+   - 
+   <a href="https://appdistribution.firebase.dev/i/4f015736bd30df0b"> Click here to become a tester </a> 
   </p>
 
 <br>
 
 ![906a0524-3253-407d-8e72-512bb39a9b9d](https://github.com/AKACHI-4/Aid-Employ/assets/99159580/531b33d4-b0fd-4f86-bd88-d7885288e5b4)
 
+
+[Ada Telegram Chatbot](https://t.me/Ada_R01_bot)
+
+![image](https://github.com/AdarshRawat1/Aid-Assist/assets/100958893/dad9ad43-45d3-4712-a29d-41010e12a74e)
+
 ## Overview
-Aid Employ is a cross-platform solution designed to address the challenges faced by local welfare initiatives in getting attention and support on mainstream social media. The platform allows users and organizations to post and discover social drives, connecting volunteers and sponsors for collaborative efforts.The project incorporates a chatbot using Gemini Pro, fine-tuned for seamless navigation. Features include description and title improvement, image generation, and more to enhance the visibility and effectiveness of social drive posts _(in working)_.
+
+- Streamlining support for local welfare initiatives on social media.
+- Connect volunteers and sponsors easily.
+- Features include:
+  - Mobile Application
+  - Telegram chatbot
+  - Gemini Pro Chat Model for efficient tagging
+- Enhance post visibility with image generation. _(Currently in development)_
 
 ## Project Details
+### UN Sustainable Development Goals
+
+The project aligns with four SDGs: No Poverty, Zero Hunger, Quality Education, and Decent Work and Economic Growth.
+<!-- GOALS -->
+## Our Goals
+No Poverty               | Zero Hunger             |   Quality Education                  |  Decent Work and Economic Growth
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-01_480.png?raw=true)|![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-02_480.png?raw=true)|![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-04_480.png?raw=tru)|![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-08_480.png?raw=true)|
 
 ### Problem Statement
-In the vast landscape of social media, local initiatives often get lost, hindering the impact of social welfare drives. Aid-Employ aims to provide a dedicated space for these initiatives, leveraging generative AI to guide users to platform with providing relevant drives in their area.
+
+In the crowded social media space, local initiatives often struggle for visibility, limiting the impact of social welfare efforts.
+
+### Solution
+
+Aid-Employ provides a dedicated platform using AI to connect users with relevant drives in their area.
 
 ### Impact
-The platform centralizes information, connecting helping minds within specific areas. Initial goals include empowering users to post and discover drives. Quantifiable data is collected through Firebase Firestore, filtering location-specific posts. Tools such as Makersuite Gemini, Google Colab, Android, and Flutter drive the project's impact.
+
+The platform centralizes information, connecting helping minds within specific areas. Initial goals include empowering users to post and discover drives seamlessely.
 
 ![8b824041-82c0-4d61-9aee-5cdc44270a4d](https://github.com/AKACHI-4/Aid-Employ/assets/99159580/4c4ee604-0c73-42db-b0ef-5ceaffdc592b)
 
-### UN Sustainable Development Goals
-The project aligns with four SDGs: No Poverty, Zero Hunger, Quality Education, and Decent Work and Economic Growth. It addresses the separation between economic classes, facilitating efficient social welfare drives.
-
 ### Architecture
-Solution's architecture mirrors a basic social media platform, with normal users and communities posting social drives. Backend processes and the Gemini-Pro model assist in guiding users, maintaining rules, and providing AI-driven insights.
+
+Architecture mirrors social media platform, with users and communities posting social drives. Backend processes and Gemini-Pro chat model assist in getting users drives data efficiently.
 
 ### Technology Stack
-- Frontend: Flutter
-- Backend: Firebase (Authentication, Real-time Database, Firestore)
-- AI Model: Gemini-Pro Chat & Vision
-- Model Tuning: Google Cloud Platform
 
-![d61a7a49-89d7-4395-abb2-25e204d0c8db](https://github.com/AKACHI-4/Aid-Employ/assets/99159580/9b1c4640-b104-4ba1-8e9a-6b7564ceba70)
+- Frontend: Flutter, Routemaster, Riverpod 2.0,
+- Backend: Firebase (Auth, Storage , Firestore)
+- AI Model: Gemini-Pro Chat
+- Chatbot: Telegram, Google Compute Engine
 
 ### Challenges
-The primary challenge is with Gemini-Pro's unavailability for fine-tuning, making it difficult to train the model effectively. The team considers alternative models or awaits fine-tuning support.
+The primary challenge was with Gemini-Pro's unavailability for fine-tuning. The team considers move ahead with a python script based telegram chatbot.
+Multimodal Tasks with the Gemini API [firestore-multimodal-genai@0.0.8] Extension for the filtering and tagging of posts .
 
 ### Future Steps
-The team envisions direct government involvement, allowing efficient management of government-owned social welfare programs. Integration of AI models for program verification is a potential future enhancement.
+**Under Development**
+-  Integrating Google Maps to platform so that users can perform food/Cloth/toy deliver volunteering while going on evening walk. (resources available for charity can be posted in platform with pickup location).
+
+**Potential Scaling**
+The team envisions direct government involvement, allowing efficient management of government-owned and local social welfare programs. 
+Integration of AI models for program verification is a potential future enhancement.
 
 ### Scaling
-To scale further, we are planning to keep the user interface minimal, implement post filtering options, and ensure accessibility across browsers and iOS devices.
+
+To scale further, we are planning to keep the user interface minimal, implement automation for faster build and release, and ensure accessibility across devices (cross-origin support).
 
 ## Getting Started
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/AKACHI-4/Aid-Employ.git
-   ```
-2. Install dependencies:
-   ```bash
-   cd Aid-Employ
-   cd app
-   flutter pub get
-   ```
-3. Run the app:
-   ```bash
-   flutter run
-   ```
-### License
+### Prerequisites
+
+To run any Android application built with Flutter you need to configure the enviroments in your machine, you can do this following the the tutorial provided by Google in [Flutter website](https://flutter.dev/docs/get-started/install)
+
+- Flutter SDK
+- Android Studio (to download Android SDK) [Installation Guide](https://developer.android.com/studio/install) 
+- Xcode (for iOS development only) 
+- Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
+
+### Flutter
+
+- Clone the repository:
+  ```bash
+  git clone https://github.com/AdarshRawat1/Solution-challenge-Aid-Assist.git
+  cd aid-assist-app
+  ```
+- Install dependencies:
+  ```bash
+  flutter pub get
+  ```
+- Run the app:
+  ```bash
+  flutter run
+  ```
+- for iOS Simulator (optional):
+  ```bash
+  open -a simulator
+  ```
+- to see the Web Output
+  ```bash
+  flutter run -d chrome --web-renderer html
+  ```
+
+<!-- FIREBASE -->
+## Firebase
+
+List of Communities             | List of Users 
+:-------------------------:|:-------------------------:|
+![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Firebase_1.png?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Firebase_3.png?raw=true)|
+
+Posts on Platform [Tagged using Gemini]             | Usage Analytics
+:-------------------------:|:-------------------------:|
+![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Firebase_2.png?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Firebase_4.png?raw=true)|
+
+<!-- SCREENSHOTS -->
+## Screenshots of Application [APK]
+
+Sign IN Screen              | Home Screen            | User's Community list                | Seach Option for Community Search
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_1.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_2.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_3.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_4.jpg?raw=true)|
+
+ Add Post Screen  | Text With link Post Screen        | Image Post Screen           | Text With Description post 
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_5.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_6.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_7.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_8.jpg?raw=true)|
+
+Profile Dashboard with Reputation          |    User Profile Drawer          | Home Screen Light mode     
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_9.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_10.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_11.jpg?raw=true)|
+
+<!-- SCREENSHOTS -->
+## Screenshots of Telegram Bot [APK]
+
+Initial             | First Response          | List of Drives Based on location [Community]              
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Tele_1.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Tele_2.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Tele_3.jpg?raw=true)|
+
+
+## Testing and Feedback 
+
+We value your input and strive to make our app the best it can be. If you're interested in helping us test new features and provide feedback, we invite you to join our list of testers.
+
+By becoming a tester, you'll get the opportunity to experience beta testing and try out upcoming features before they're released to the public. Meanwhile, stable releases can be found in the [Releases section](https://github.com/AdarshRawat1/Aid-Assist/releases/tag/Stable) . You can also contribute by building the app locally and testing specific functionalities to help us find and fix bugs. Alternatively, you can join our testing app group to access beta releases and provide [feedback directly](https://github.com/AdarshRawat1/Aid-Assist/issues).
+
+To join our testing program, click [here](https://appdistribution.firebase.dev/i/4f015736bd30df0b) and become a part of shaping the future of our app!
+
+
+<!-- YOUTUBE -->
+## 📌 JOURNEY
+- Final Submission Video [YouTube](https://youtu.be/YZhykdsAA7E)
+- Regional Bootcamp Submission [YouTube](https://youtu.be/e0kt3fsICAI)
+
+## License
+
 This project is licensed under the [MIT License](./LICENSE).
 
-### Acknowledgments
+## Acknowledgments
+
 We appreciate the support from the open-source community and look forward to making a positive impact together.

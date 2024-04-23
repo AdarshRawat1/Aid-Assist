@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:aid_employ/features/feed/feed_screen.dart';
 import 'package:aid_employ/features/post/screens/add_post_screen.dart';
-
+import 'package:aid_employ/features/donate/donate_map.dart';
+const String googleMapsApiKey="___Secret ___";
 class Constants {
   static const logoPath = 'assets/images/logo.png';
   static const loginEmotePath = 'assets/images/loginEmote.png';
@@ -12,11 +13,12 @@ class Constants {
   static const bannerDefault =
       'https://thumbs.dreamstime.com/b/abstract-stained-pattern-rectangle-background-blue-sky-over-fiery-red-orange-color-modern-painting-art-watercolor-effe-texture-123047399.jpg';
   static const avatarDefault =
-      'https://external-preview.redd.it/5kh5OreeLd85QsqYO1Xz_4XSLYwZntfjqou-8fyBFoE.png?auto=webp&s=dbdabd04c399ce9c761ff899f5d38656d1de87c2';
+      'https://firebasestorage.googleapis.com/v0/b/soln-no-poverty.appspot.com/o/Defaults%2FAvatar.png?alt=media&token=15219f88-1e6b-4b7c-8601-081c1930d061';
 
   static const tabWidgets = [
     FeedScreen(),
     AddPostScreen(),
+    DonationScreen(),
   ];
 
   static const IconData up = IconData(0xe800, fontFamily: 'MyFlutterApp', fontPackage: null);

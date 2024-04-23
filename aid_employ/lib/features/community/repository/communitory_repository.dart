@@ -83,7 +83,7 @@ class CommunityRepository {
     return _communities
         .where(
           'name',
-          isGreaterThanOrEqualTo: query.isEmpty ? 0 : query,
+          isGreaterThanOrEqualTo: query.isEmpty ? '' : query,
           isLessThan: query.isEmpty
               ? null
               : query.substring(0, query.length - 1) +

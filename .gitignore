@@ -64,3 +64,6 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+# Ignoring API keys used in Development 
+aid_employ/android/app/src/main/AndroidManifest.xml
