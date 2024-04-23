@@ -19,6 +19,8 @@
     <a href="https://github.com/AdarshRawat1/Solution-challenge-Aid-Assist/issues">Report Bug / Request Feature</a> 
    - 
    <a href="https://t.me/Ada_R01_bot"> Telegram Chatbot</a> 
+   - 
+   <a href="https://appdistribution.firebase.dev/i/4f015736bd30df0b"> Click here to become a tester </a> 
   </p>
 
 <br>
@@ -159,6 +161,14 @@ Initial             | First Response          | List of Drives Based on location
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Tele_1.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Tele_2.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Tele_3.jpg?raw=true)|
 
+
+## Testing and Feedback 
+
+We value your input and strive to make our app the best it can be. If you're interested in helping us test new features and provide feedback, we invite you to join our list of testers.
+
+By becoming a tester, you'll get the opportunity to experience beta testing and try out upcoming features before they're released to the public. Meanwhile, stable releases can be found in the [Releases section](https://github.com/AdarshRawat1/Aid-Assist/releases/tag/Stable) . You can also contribute by building the app locally and testing specific functionalities to help us find and fix bugs. Alternatively, you can join our testing app group to access beta releases and provide [feedback directly](https://github.com/AdarshRawat1/Aid-Assist/issues).
+
+To join our testing program, click [here](https://appdistribution.firebase.dev/i/4f015736bd30df0b) and become a part of shaping the future of our app!
 
 
 <!-- YOUTUBE -->
