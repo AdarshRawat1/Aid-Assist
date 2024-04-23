@@ -12,6 +12,7 @@ import 'package:aid_employ/models/post_model.dart';
 import 'package:aid_employ/responsive/responsive.dart';
 import 'package:aid_employ/theme/pallete.dart';
 import 'package:routemaster/routemaster.dart';
+import 'package:flutter_svg/svg.dart';
 
 class PostCard extends ConsumerWidget {
   final Post post;
@@ -125,17 +126,18 @@ class PostCard extends ConsumerWidget {
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            'r/${post.communityName}',
+                                            '${post.communityName}',
                                             style: const TextStyle(
                                               fontSize: 16,
                                               fontWeight: FontWeight.bold,
+                                              color: Pallete.whiteColor,
                                             ),
                                           ),
                                           GestureDetector(
                                             onTap: () => navigateToUser(context),
                                             child: Text(
-                                              'u/${post.username}',
-                                              style: const TextStyle(fontSize: 12),
+                                              'Volunteer - ${post.username}',
+                                              style: const TextStyle(fontSize: 12,color : Pallete.themeColor),
                                             ),
                                           ),
                                         ],
@@ -147,7 +149,7 @@ class PostCard extends ConsumerWidget {
                                   IconButton(
                                     onPressed: () => deletePost(ref, context),
                                     icon: Icon(
-                                      Icons.delete,
+                                      Icons.delete_rounded,
                                       color: Pallete.redColor,
                                     ),
                                   ),
@@ -223,7 +225,7 @@ class PostCard extends ConsumerWidget {
                                         ),
                                       ),
                                       Text(
-                                        '${post.upvotes.length - post.downvotes.length == 0 ? 'Vote' : post.upvotes.length - post.downvotes.length}',
+                                        '${post.upvotes.length - post.downvotes.length == 0 ? 'Support' : post.upvotes.length - post.downvotes.length}',
                                         style: const TextStyle(fontSize: 17),
                                       ),
                                       IconButton(
@@ -245,7 +247,7 @@ class PostCard extends ConsumerWidget {
                                       ),
                                     ),
                                     Text(
-                                      '${post.commentCount == 0 ? 'Comment' : post.commentCount}',
+                                      '${post.commentCount == 0 ? 'Discuss' : post.commentCount}',
                                       style: const TextStyle(fontSize: 17),
                                     ),
                                   ],
