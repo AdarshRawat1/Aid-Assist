@@ -9,6 +9,23 @@ class Constants {
   static const googlePath = 'assets/images/google.png';
   static const iconsPath = 'assets/icons';
 
+  static const archiveAddIcon = '$iconsPath/archive-add.svg';
+  static const arrowBottomIcon = '$iconsPath/arrow-bottom.svg';
+  static const arrowUpIcon = '$iconsPath/arrow-up.svg';
+  static const giftIcon = '$iconsPath/gift.svg';
+  static const homeIcon = '$iconsPath/home.svg';
+  static const imageIcon = '$iconsPath/image.svg';
+  static const linkIcon = '$iconsPath/link.svg';
+  static const logoutIcon = '$iconsPath/logout.svg';
+  static const commentIcon = '$iconsPath/message-text.svg';
+  static const moreIcon = '$iconsPath/more.svg';
+  static const searchIcon = '$iconsPath/search-normal.svg';
+  static const modIcon = '$iconsPath/security-user.svg';
+  static const settingsIcon = '$iconsPath/setting.svg';
+  static const textBlockIcon = '$iconsPath/text-block.svg';
+  static const trashIcon = '$iconsPath/trash.svg';
+  static const userOctagonIcon = '$iconsPath/user-octagon.svg';
+  static const verifyIcon = '$iconsPath/verify.svg';
 
   static const bannerDefault =
       'https://thumbs.dreamstime.com/b/abstract-stained-pattern-rectangle-background-blue-sky-over-fiery-red-orange-color-modern-painting-art-watercolor-effe-texture-123047399.jpg';
