@@ -1,3 +1,6 @@
+## NOTE : Kept here in case anyone wants to keep just the flutter 
+## App directory without keeping all the other files
+
 # Miscellaneous
 *.class
 *.log
