@@ -142,17 +142,18 @@ Posts on Platform [Tagged using Gemini]             | Usage Analytics
 <!-- SCREENSHOTS -->
 ## Screenshots of Application [APK]
 
-Sign IN Screen              | Home Screen            | User's Community list                | Seach Option for Community Search
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_1.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_2.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_3.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_4.jpg?raw=true)|
+| Sign IN Screen              | Home Screen            | User's Community list                | Seach Option for Community Search |
+|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img src="https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_1.jpg?raw=true" alt="Sign IN Screen" width="900"/>|<img src="https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_2.jpg?raw=true" alt="Home Screen" width="900"/>|<img src="https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_3.jpg?raw=true" alt="User's Community list" width="900"/>|<img src="https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_4.jpg?raw=true" alt="Search Option for Community Search" width="900"/>|
 
- Add Post Screen  | Text With link Post Screen        | Image Post Screen           | Text With Description post 
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_5.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_6.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_7.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_8.jpg?raw=true)|
+| Add Post Screen  | Text With link Post Screen        | Image Post Screen           | Text With Description post |
+|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img src="https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_5.jpg?raw=true" alt="Add Post Screen" width="900"/>|<img src="https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_6.jpg?raw=true" alt="Text With link Post Screen" width="900"/>|<img src="https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_7.jpg?raw=true" alt="Image Post Screen" width="900"/>|<img src="https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_8.jpg?raw=true" alt="Text With Description post" width="900"/>|
 
-Profile Dashboard with Reputation          |    User Profile Drawer          | Home Screen Light mode     
-:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_9.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_10.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_11.jpg?raw=true)|
+| Profile Dashboard with Reputation          |    User Profile Drawer          | Home Screen Light mode     |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img src="https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_9.jpg?raw=true" alt="Profile Dashboard with Reputation" width="900"/>|<img src="https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_10.jpg?raw=true" alt="User Profile Drawer" width="900"/>|<img src="https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Apk_11.jpg?raw=true" alt="Home Screen Light mode" width="900"/>|
+
 
 <!-- SCREENSHOTS -->
 ## Screenshots of Telegram Bot [APK]
