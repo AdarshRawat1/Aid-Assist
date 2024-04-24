@@ -15,8 +15,11 @@ class _DonationScreenState extends State<DonationScreen> {
 
   static const Donation_Center_1 = LatLng(30.2690, 77.9916);
   static const Donation_Center_2 = LatLng(22.6708,  71.5724);
+  static const Support_Outreach_Point_1 = LatLng(30.2892, 77.9987);
+  static const Support_Outreach_Point_2 = LatLng(30.2915, 78.0543);
   BitmapDescriptor? donationCenterIcon;
   BitmapDescriptor? userIcon;
+  BitmapDescriptor? supportOutreachIcon;
   
 
 LatLng? currentPosition;
@@ -63,7 +66,7 @@ Map <PolylineId, Polyline> polylines={};
                     ),
           ),
            Marker(
-              markerId: MarkerId('Donation POint 2'),
+              markerId: MarkerId('Donation Point 2'),
               icon: donationCenterIcon ?? BitmapDescriptor.defaultMarker,
               position: Donation_Center_2,
               infoWindow: InfoWindow(
@@ -71,6 +74,26 @@ Map <PolylineId, Polyline> polylines={};
                         snippet:
                             'Gujrat - 1234567890'),
             ),
+            Marker(
+                    markerId: MarkerId('Support_Outreach_Point_1'),
+                    icon: supportOutreachIcon ?? BitmapDescriptor.defaultMarker,
+                    position: Support_Outreach_Point_1,
+                    infoWindow: InfoWindow(
+                        title: '[Support Outreach] ISBT Dehradun',
+                        snippet:
+                            'Donate your old clothes, toys, books or provide food to the needy'
+                  ),
+            ),
+            Marker(
+                    markerId: MarkerId('Support_Outreach_Point_2'),
+                    icon: supportOutreachIcon ?? BitmapDescriptor.defaultMarker,
+                    position: Support_Outreach_Point_2,
+                    infoWindow: InfoWindow(
+                        title: '[Support Outreach] Rispana Dehradun',
+                        snippet:
+                            'Donate your old clothes, toys, books or provide food to the needy'
+                            ),
+                  ),
           },
           polylines:Set<Polyline>.of(polylines.values),
       ),
@@ -83,6 +106,10 @@ Future<void> loadIcons() async {
     userIcon = await BitmapDescriptor.fromAssetImage(
       const ImageConfiguration(),
       'assets/images/userLocation.png',
+    );
+    supportOutreachIcon = await BitmapDescriptor.fromAssetImage(
+      const ImageConfiguration(),
+      'assets/images/support_Outreach.png',
     );
   }
 
