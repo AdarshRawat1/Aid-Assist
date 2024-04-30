@@ -101,3 +101,9 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# chatbot venv
+chatbot/venv
+
+# firebase access
+chatbot/service.json

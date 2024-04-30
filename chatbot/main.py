@@ -24,7 +24,7 @@ import os
 import firebase_admin
 from firebase_admin import credentials, firestore
 
-my_bot_token = 'bot-token'
+my_bot_token = 'paste-your-bot-token-here'
 
 # Enable logging
 logging.basicConfig(
@@ -47,23 +47,24 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
   user = update.effective_user
   message = (
-    f"Hi {user.mention_html()}! 👋\n"
-    "<b><i>I'm Ada</i></b>, your friendly chat bot 🤖!\n\n"
-    "I'm here to help you <b><i>discover social events, community initiatives, and drives</i></b> happening around you.\n"
-    "Whether you're looking for <b><i>volunteer opportunities, charity events, or community gatherings</i></b>, I've got you covered!\n\n"
-    "Just share your <b><i>location</i></b> or <b><i>community name</i></b> with me, and I'll fetch the <b><i>latest happenings</i></b> in your area.\n"
-    "(<i>we are restricted with tasks, so kindly provide only your location in a word or so</i>)\n\n"
-    "<b><i>Let's explore together!</i></b> 🌍✨\n\n"
+    f"Hello {user.mention_html()}! 👋\n"
+    "I'm <b>Ada</b>, Your Helpful Friend! 🌟\n\n"
+    "I'm here to assist you in <i>discovering community initiatives</i> and <i>offering your valuable support to those in need</i>.\n\n"
+    "We're collaborating with the <b>Uttarakhand government</b> and focusing on four major cities <i>to streamline the donation and drive process</i>. Explore the options below.\n\n"
+    "<i>Let's make a difference together!</i> 🛤️✨\n\n"
   )
-
 
   keyboard = [
     [
       InlineKeyboardButton("Dehradun", callback_data="Dehradun"),
-      InlineKeyboardButton("Uttarakashi", callback_data="Uttarakashi"),
+      InlineKeyboardButton("Haridwar", callback_data="Haridwar"),
     ],
     [
-      InlineKeyboardButton("Donate", callback_data="Donate"),
+      InlineKeyboardButton("Nainital", callback_data="Nainital"),
+      InlineKeyboardButton("Roorkee", callback_data="Roorkee"),
+    ],
+    [
+      InlineKeyboardButton("Make Dondation, Offer support", callback_data="Donate"),
     ]
   ]
 
@@ -75,13 +76,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 async def send_location(update: Update,
                        context: ContextTypes.DEFAULT_TYPE) -> None:
 
-  await update.callback_query.message.reply_venue(30.28364533962137, 78.06098353377881, "Children of India Donation Collection Center", "Swastik Enclave, Badripur Road, Jogiwala, Dehradun 248005")
+  await update.callback_query.message.reply_venue(30.332301277525875, 78.05103631121074, "CM Donation Collection Center", "Uttarakhand CM Secretariat, 4 Subash Road, Dehradun, Uttarakhand 248001")
 
 async def button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
   query = update.callback_query.data
-
-  print(query)
 
   if query == "Donate":
     await send_location(update, context)
@@ -101,6 +100,13 @@ async def location_handler(update: Update, location, context: ContextTypes.DEFAU
   # Query documents where the 'communityName' field contains the user's message
   documents = collection_ref.where(city_attribute, city_operation, location).limit(5).get()
 
+  if not documents:
+    reply_text = f"There's no social drive in <b>{location}</b> right now,\n<i>but keep on checking; we will add drives regularly! 😊</i>"
+
+    await update.callback_query.message.reply_html(reply_text)
+
+    return
+
   # Prepare a reply message with the fetched data
   reply_text = ""
   for document in documents:
@@ -112,24 +118,15 @@ async def location_handler(update: Update, location, context: ContextTypes.DEFAU
       description = description.capitalize()
     username = document.get("username").capitalize()
 
-    reply_text += (f"<b>📌 Title:</b> {title}\n"
-                   f"<b>🌍 Community:</b> {community}\n"
-                   f"<b>ℹ️ Description:</b> {description}\n"
-                   f"<b>👤 Username:</b> {username}\n\n")
+    reply = (f"<b>{title}</b>, by <i>{username}</i>\n"
+            f"<i>In 🌍 {community}</i>\n\n"
+            f"ℹ️ {description}\n\n\n")
 
-  if not reply_text:
-    reply_text = f"<b>No data found for the given location.</b>\n\n<i>Probably you've entered something mismatched, kindly try with something else.</i>"
+    await update.callback_query.message.reply_html(reply)
 
-    reply_text = f"<b>Here's list of some exciting social drives happening in {location}! 🌟</b>\n\n{reply_text}"
+  text = "More events will be added regularly.\n<i>Thanks for your time! Keep on checking! </i>🎉"
 
-  # Split the reply_text into chunks of maximum message length allowed by Telegram
-  message_chunks = [
-      reply_text[i:i + 4096] for i in range(0, len(reply_text), 4096)
-  ]
-
-  # Reply to the user with each chunk separately
-  for chunk in message_chunks:
-    await update.callback_query.message.reply_html(chunk)
+  await update.callback_query.message.reply_html(text)
 
 def main() -> None:
   """Start the bot."""
