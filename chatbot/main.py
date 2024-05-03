@@ -24,7 +24,7 @@ import os
 import firebase_admin
 from firebase_admin import credentials, firestore, auth
 
-my_bot_token = '6751113963:AAENWjtiK0ywvDida_yC6q0oHi8adDbyfbw'
+my_bot_token = 'your-bot-token-here'
 
 # Enable logging
 logging.basicConfig(
