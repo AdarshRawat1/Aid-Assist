@@ -158,7 +158,7 @@ Posts on Platform [Tagged using Gemini]             | Usage Analytics
 <!-- SCREENSHOTS -->
 ## Screenshots of Telegram Bot [APK]
 
-Initial             | First Response          | List of Drives Based on location [Community]              
+Get Started | Find Recent Drives of Cities | Locate Donation Centers [Community]              
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Tele_1.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Tele_2.jpg?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Tele_3.jpg?raw=true)|
 
