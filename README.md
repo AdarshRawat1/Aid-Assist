@@ -18,17 +18,13 @@
     ·
     <a href="https://github.com/AdarshRawat1/Solution-challenge-Aid-Assist/issues">Report Bug / Request Feature</a> 
    - 
-   <a href="https://t.me/Ada_R01_bot"> Telegram Chatbot</a> 
+   <a href="https://t.me/Ada_R01_bot">Ada Telegram Chatbot</a> 
    - 
    <a href="https://appdistribution.firebase.dev/i/4f015736bd30df0b"> Click here to become a tester </a> 
   </p>
 
 <br>
 
-
-[Ada Telegram Chatbot](https://t.me/Ada_R01_bot)
-
-![image](https://github.com/AdarshRawat1/Aid-Assist/assets/100958893/dad9ad43-45d3-4712-a29d-41010e12a74e)
 
 ## Overview
 
