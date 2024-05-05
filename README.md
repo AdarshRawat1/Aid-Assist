@@ -81,7 +81,8 @@ To scale further, we are planning to keep the user interface minimal, implement 
 
 ## Getting Started
 
-To set up the Telegram Bot, please refer to the guide here : [chatbot/README.md](https://github.com/AdarshRawat1/Aid-Assist/blob/main/chatbot/README.md)
+> [!IMPORTANT]
+> To set up the Telegram Bot, please refer to the guide here : [chatbot/README.md](https://github.com/AdarshRawat1/Aid-Assist/blob/main/chatbot/README.md)
 
 ### Prerequisites
 
