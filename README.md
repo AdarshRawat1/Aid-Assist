@@ -34,49 +34,43 @@
   - Mobile Application
   - Telegram chatbot
   - Gemini Pro Chat Model for efficient tagging
-- Enhance post visibility with image generation. _(Currently in development)_
+- Locate Government donation centers and support reachout points easily
 
 ## Project Details
 ### UN Sustainable Development Goals
 
 The project aligns with four SDGs: No Poverty, Zero Hunger, Quality Education, and Decent Work and Economic Growth.
 <!-- GOALS -->
-## Our Goals
+### Our Goals
 No Poverty               | Zero Hunger             |   Quality Education                  |  Decent Work and Economic Growth
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
 ![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-01_480.png?raw=true)|![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-02_480.png?raw=true)|![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-04_480.png?raw=tru)|![](https://developers.google.com/community/images/gdsc-solution-challenge/goal-08_480.png?raw=true)|
 
 ### Problem Statement
 
-In the crowded social media space, local initiatives often struggle for visibility, limiting the impact of social welfare efforts.
+In the crowded landscape of social media, local initiatives often struggle for visibility, limiting the impact of social welfare efforts.
 
 ### Solution
 
-Aid-Employ provides a dedicated platform using AI to connect users with relevant drives in their area.
+Aid-Assist provides a dedicated platform using AI to connect users with relevant drives in their area.
 
 ### Impact
 
-The platform centralizes information, connecting helping minds within specific areas. Initial goals include empowering users to post and discover drives seamlessely.
+The platform centralizes information, connecting helping minds within communities. Initial goals include empowering users to post and discover drives seamlessely.
 
 ### Architecture
 
 Architecture mirrors social media platform, with users and communities posting social drives. Backend processes and Gemini-Pro chat model assist in getting users drives data efficiently.
+Including a telegram bot "ADA" deployed on Google Compute Engine.
 
 ### Technology Stack
 
-- Frontend: Flutter, Routemaster, Riverpod 2.0,
-- Backend: Firebase (Auth, Storage , Firestore)
+- Frontend: Flutter, Routemaster, Riverpod 2.0
+- Backend: Firebase (Auth, Storage , Firestore, Crashlytics, App Distribution, Test lab)
 - AI Model: Gemini-Pro Chat
 - Chatbot: Telegram, Google Compute Engine
 
-### Challenges
-The primary challenge was with Gemini-Pro's unavailability for fine-tuning. The team considers move ahead with a python script based telegram chatbot.
-Multimodal Tasks with the Gemini API [firestore-multimodal-genai@0.0.8] Extension for the filtering and tagging of posts .
-
 ### Future Steps
-**Under Development**
--  Integrating Google Maps to platform so that users can perform food/Cloth/toy deliver volunteering while going on evening walk. (resources available for charity can be posted in platform with pickup location).
-
 **Potential Scaling**
 The team envisions direct government involvement, allowing efficient management of government-owned and local social welfare programs. 
 Integration of AI models for program verification is a potential future enhancement.
@@ -123,11 +117,11 @@ To run any Android application built with Flutter you need to configure the envi
 <!-- FIREBASE -->
 ## Firebase
 
-List of Communities             | List of Users 
+List of Communities             | Posts on Platform [Tagged using Gemini]
 :-------------------------:|:-------------------------:|
 ![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Firebase_1.png?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Firebase_3.png?raw=true)|
 
-Posts on Platform [Tagged using Gemini]             | Usage Analytics
+Test Lab [Multi-Device Testing]             | Usage Analytics
 :-------------------------:|:-------------------------:|
 ![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Firebase_2.png?raw=true)|![](https://github.com/AdarshRawat1/Aid-Assist/blob/main/screenshots/Firebase_4.png?raw=true)|
 
