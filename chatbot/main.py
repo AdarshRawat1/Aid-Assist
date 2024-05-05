@@ -22,9 +22,9 @@ from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandl
 import os
 
 import firebase_admin
-from firebase_admin import credentials, firestore
+from firebase_admin import credentials, firestore, auth
 
-my_bot_token = 'paste-your-bot-token-here'
+my_bot_token = 'your-bot-token-here'
 
 # Enable logging
 logging.basicConfig(
@@ -39,7 +39,6 @@ logger = logging.getLogger(__name__)
 cred = credentials.Certificate("./service.json")
 firebase_admin.initialize_app(cred)
 db = firestore.client()
-
 
 # Define a few command handlers. These usually take the two arguments update and
 # context.
@@ -116,11 +115,17 @@ async def location_handler(update: Update, location, context: ContextTypes.DEFAU
     description = document.get("description")
     if description :
       description = description.capitalize()
-    username = document.get("username").capitalize()
+    admin = document.get("username").capitalize()
+    tag = document.get("tag").capitalize()
+    uid = document.get("uid")
 
-    reply = (f"<b>{title}</b>, by <i>{username}</i>\n"
-            f"<i>In 🌍 {community}</i>\n\n"
-            f"ℹ️ {description}\n\n\n")
+    email = auth.get_user(uid).email
+
+
+    reply = (f"✨✨ <b>{title}</b>, by <i>{admin}</i> ✨✨\n\n"
+            f"🚀 If you've got skills in <b>{tag}</b>, we encourage you to come!\n\n"
+            f"💬 <i>Description : </i> {description}\n\n"
+            f"✉️ <i>Ready to volunteer? Email us at : </i>{email}\n\n\n")
 
     await update.callback_query.message.reply_html(reply)
 
