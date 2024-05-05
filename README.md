@@ -25,8 +25,6 @@
 
 <br>
 
-![906a0524-3253-407d-8e72-512bb39a9b9d](https://github.com/AKACHI-4/Aid-Employ/assets/99159580/531b33d4-b0fd-4f86-bd88-d7885288e5b4)
-
 
 [Ada Telegram Chatbot](https://t.me/Ada_R01_bot)
 
@@ -63,8 +61,6 @@ Aid-Employ provides a dedicated platform using AI to connect users with relevant
 ### Impact
 
 The platform centralizes information, connecting helping minds within specific areas. Initial goals include empowering users to post and discover drives seamlessely.
-
-![8b824041-82c0-4d61-9aee-5cdc44270a4d](https://github.com/AKACHI-4/Aid-Employ/assets/99159580/4c4ee604-0c73-42db-b0ef-5ceaffdc592b)
 
 ### Architecture
 
