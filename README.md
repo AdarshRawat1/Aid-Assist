@@ -81,6 +81,8 @@ To scale further, we are planning to keep the user interface minimal, implement 
 
 ## Getting Started
 
+To set up the Telegram Bot, please refer to the guide here : [chatbot/README.md](https://github.com/AdarshRawat1/Aid-Assist/blob/main/chatbot/README.md)
+
 ### Prerequisites
 
 To run any Android application built with Flutter you need to configure the enviroments in your machine, you can do this following the the tutorial provided by Google in [Flutter website](https://flutter.dev/docs/get-started/install)
