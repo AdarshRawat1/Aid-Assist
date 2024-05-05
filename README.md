@@ -164,9 +164,9 @@ To join our testing program, click [here](https://appdistribution.firebase.dev/i
 
 <!-- YOUTUBE -->
 ## 📌 JOURNEY
-- Regional Bootcamp Submission [YouTube](https://youtu.be/e0kt3fsICAI)
-- Global top 100 Video [YouTube](https://youtu.be/YZhykdsAA7E)
 - Global top 10 Submission video [YouTube](https://youtu.be/wdaK0qTUtWU)
+- Global top 100 Video [YouTube](https://youtu.be/YZhykdsAA7E)
+- Regional Bootcamp Submission [YouTube](https://youtu.be/e0kt3fsICAI)
 
 ## License
 
