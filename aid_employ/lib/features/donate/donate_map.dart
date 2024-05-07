@@ -30,8 +30,10 @@ Map <PolylineId, Polyline> polylines={};
   void initState() {
     loadIcons(); 
     super.initState();
-    WidgetsBinding.instance
-    .addPostFrameCallback((_)async => await initializeMap());
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      await checkLocationStatus();
+        await initializeMap(); // Call initializeMap after checking location status
+    });
   }
   
   Future <void> initializeMap() async {
@@ -111,6 +113,34 @@ Future<void> loadIcons() async {
       const ImageConfiguration(),
       'assets/images/support_Outreach.png',
     );
+  }
+  Future<void> checkLocationStatus() async {
+    bool serviceEnabled;
+    Location location = Location();
+
+    serviceEnabled = await location.serviceEnabled();
+    if (!serviceEnabled) {
+      serviceEnabled = await location.requestService();
+      if (!serviceEnabled) {
+        // Show dialog or snackbar to prompt the user to enable GPS
+        showDialog(
+          context: context,
+          builder: (context) => AlertDialog(
+            title: Text('Enable Location'),
+            content: Text('Please enable location services to Find donation centers and support outreach points near you.'),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                  location.requestService();
+                },
+                child: Text('Enable Location and Find'),
+              ),
+            ],
+          ),
+        );
+      }
+    }
   }
 
 Future<void> fetchlocationUpdates () async {
